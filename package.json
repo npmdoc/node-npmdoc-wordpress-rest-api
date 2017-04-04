@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"wordpress-rest-api",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "wordpress-rest-api",
+    "description": "api documentation for [wordpress-rest-api (v0.8.0)](https://github.com/kadamwhite/wordpress-rest-api) [![npm package](https://img.shields.io/npm/v/npmdoc-wordpress-rest-api.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-wordpress-rest-api) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-wordpress-rest-api.svg)](https://travis-ci.org/npmdoc/node-npmdoc-wordpress-rest-api)",
     "devDependencies": {
-        "wordpress-rest-api": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
-        "utility2": "kaizhu256/node-utility2#alpha"
+        "utility2": "kaizhu256/node-utility2#alpha",
+        "wordpress-rest-api": "*"
     },
-    "name":"npmdoc-wordpress-rest-api",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-wordpress-rest-api",
+    "keywords": [
+        "documentation",
+        "wordpress-rest-api"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_wordpress_rest_api.js",
+    "name": "npmdoc-wordpress-rest-api",
+    "nameAlias": "npmdoc_wordpress_rest_api",
+    "nameOriginal": "npmdoc-wordpress-rest-api",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-wordpress-rest-api"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
