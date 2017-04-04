@@ -1,0 +1,799 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/kadamwhite/wordpress-rest-api"
+
+    >wordpress-rest-api (v0.8.0)</a>
+</h1>
+<h4>A client for interacting with the WordPress REST API</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api">module wordpress-rest-api</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.discover">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>discover
+            <span class="apidocSignatureSpan">( url )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.site">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>site
+            <span class="apidocSignatureSpan">( endpoint, routes )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">wordpress-rest-api.</span>autodiscovery</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">wordpress-rest-api.</span>endpoint_factories</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">wordpress-rest-api.</span>endpoint_request</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">wordpress-rest-api.</span>path_part_setter</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">wordpress-rest-api.</span>resource_handler_spec</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">wordpress-rest-api.</span>route_tree</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.autodiscovery">module wordpress-rest-api.autodiscovery</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.autodiscovery.getAPIRootFromURL">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.autodiscovery.</span>getAPIRootFromURL
+            <span class="apidocSignatureSpan">( url, useGET )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.autodiscovery.getRootResponseJSON">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.autodiscovery.</span>getRootResponseJSON
+            <span class="apidocSignatureSpan">( apiRootURL )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.autodiscovery.locateAPIRootHeader">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.autodiscovery.</span>locateAPIRootHeader
+            <span class="apidocSignatureSpan">( response )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.autodiscovery.resolveAsPromise">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.autodiscovery.</span>resolveAsPromise
+            <span class="apidocSignatureSpan">( superagentReq )</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.endpoint_factories">module wordpress-rest-api.endpoint_factories</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.endpoint_factories.generate">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.endpoint_factories.</span>generate
+            <span class="apidocSignatureSpan">( routesByNamespace )</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.endpoint_request">module wordpress-rest-api.endpoint_request</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.endpoint_request.create">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.endpoint_request.</span>create
+            <span class="apidocSignatureSpan">( handlerSpec, resource, namespace )</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.path_part_setter">module wordpress-rest-api.path_part_setter</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.path_part_setter.create">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.path_part_setter.</span>create
+            <span class="apidocSignatureSpan">( node )</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.resource_handler_spec">module wordpress-rest-api.resource_handler_spec</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.resource_handler_spec.create">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.resource_handler_spec.</span>create
+            <span class="apidocSignatureSpan">( routeDefinition, resource )</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.route_tree">module wordpress-rest-api.route_tree</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.route_tree.build">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.route_tree.</span>build
+            <span class="apidocSignatureSpan">( routes )</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.wordpress-rest-api" id="apidoc.module.wordpress-rest-api">module wordpress-rest-api</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.discover" id="apidoc.element.wordpress-rest-api.discover">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>discover
+        <span class="apidocSignatureSpan">( url )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">discover = function ( url ) {
+	// local placeholder for API root URL
+	var endpoint;
+
+	return autodiscovery.getAPIRootFromURL( url )
+		.then( autodiscovery.locateAPIRootHeader )
+		.then(function( apiRootURL ) {
+			// Set the function-scope variable that will be used to instantiate
+			// the bound WP instance, then pass the URL on
+			endpoint = apiRootURL;
+			return apiRootURL;
+		})
+		.then( autodiscovery.getRootResponseJSON )
+		.then(function( apiRootJSON ) {
+			// Instantiate &#x26; bootstrap with the discovered methods
+			return new WP({
+				endpoint: endpoint,
+				routes: apiRootJSON.routes
+			});
+		})
+		.catch(function( err ) {
+			console.error( &#x27;Autodiscovery failed&#x27; );
+			console.error( err );
+			if ( endpoint ) {
+				console.warn( &#x27;Endpoint detected, proceeding despite error...&#x27; );
+				console.warn( &#x27;Binding to &#x27; + endpoint + &#x27; and assuming default routes&#x27; );
+				return new WP.site( endpoint );
+			}
+			return null;
+		});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+The `wp` object will have endpoint handler methods for every endpoint that ships with the default WordPress REST API plugin.
+
+### Auto-Discovery
+
+It is also possible to leverage the [capability discovery](http://v2.wp-api.org/guide/discovery/) features of the API to automatically
+ detect and add setter methods for your custom routes, or routes added by plugins.
+
+To utilize the auto-discovery functionality, call `WP.<span class="apidocCodeKeywordSpan">discover</span>()` with a URL within a
+ WordPress REST API-enabled site:
+```js
+var apiPromise = WP.discover( &#x27;http://my-site.com&#x27; );
+```
+If auto-discovery succeeds this method returns a promise that will be resolved with a WP client instance object configured specifically
+ for your site. You can use that promise as the queue that your client instance is ready, then use the client normally within the
+ `.then` callback.
+
+**Custom Routes** will be detected by this process, and registered on the client. To prevent name conflicts, only routes in the `
+wp/v2` namespace will be bound to your instance object itself. The rest can be accessed through the `.namespace` method on the WP
+ instance, as demonstrated below.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.site" id="apidoc.element.wordpress-rest-api.site">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>site
+        <span class="apidocSignatureSpan">( endpoint, routes )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">site = function ( endpoint, routes ) {
+	return new WP({
+		endpoint: endpoint,
+		routes: routes
+	});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+* Convenience method for making a new WP instance
+*
+* @example
+* These are equivalent:
+*
+*     var wp = new WP({ endpoint: &#x27;http://my.blog.url/wp-json&#x27; });
+*     var wp = WP.<span class="apidocCodeKeywordSpan">site</span>( &#x27;http://my.blog.url/wp-json&#x27; );
+*
+* `WP.site` can take an optional API root response JSON object to use when
+* bootstrapping the client&#x27;s endpoint handler methods: if no second parameter
+* is provided, the client instance is assumed to be using the default API
+* with no additional plugins and is initialized with handlers for only those
+* default API routes.
+*
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.wordpress-rest-api.autodiscovery" id="apidoc.module.wordpress-rest-api.autodiscovery">module wordpress-rest-api.autodiscovery</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.autodiscovery.getAPIRootFromURL" id="apidoc.element.wordpress-rest-api.autodiscovery.getAPIRootFromURL">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.autodiscovery.</span>getAPIRootFromURL
+        <span class="apidocSignatureSpan">( url, useGET )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getAPIRootFromURL( url, useGET ) {
+
+	// If useGET is specified and truthy, .get the url; otherwise use .head
+	// because we only care about the HTTP headers, not the response body.
+	var request = useGET ? agent.get( url ) : agent.head( url );
+
+	return resolveAsPromise( request )
+		.catch(function( err ) {
+			// If this wasn&#x27;t already a GET request, then on the hypothesis that an
+			// error arises from an unaccepted HEAD request, try again using GET
+			if ( ! useGET ) {
+				return getAPIRootFromURL( url, true );
+			}
+
+			// Otherwise re-throw the error
+			throw err;
+		});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * to the deduced endpoint, or rejected if an endpoint is not found or the
+ * library is unable to parse the provided endpoint.
+ */
+WP.discover = function( url ) {
+	// local placeholder for API root URL
+	var endpoint;
+
+	return autodiscovery.<span class="apidocCodeKeywordSpan">getAPIRootFromURL</span>( url )
+		.then( autodiscovery.locateAPIRootHeader )
+		.then(function( apiRootURL ) {
+			// Set the function-scope variable that will be used to instantiate
+			// the bound WP instance, then pass the URL on
+			endpoint = apiRootURL;
+			return apiRootURL;
+		})
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.autodiscovery.getRootResponseJSON" id="apidoc.element.wordpress-rest-api.autodiscovery.getRootResponseJSON">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.autodiscovery.</span>getRootResponseJSON
+        <span class="apidocSignatureSpan">( apiRootURL )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getRootResponseJSON( apiRootURL ) {
+	return resolveAsPromise( agent.get( apiRootURL ).set( &#x27;Accept&#x27;, &#x27;application/json&#x27; ) )
+		.then(function( response ) {
+			return response.body;
+		});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.autodiscovery.locateAPIRootHeader" id="apidoc.element.wordpress-rest-api.autodiscovery.locateAPIRootHeader">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.autodiscovery.</span>locateAPIRootHeader
+        <span class="apidocSignatureSpan">( response )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function locateAPIRootHeader( response ) {
+	var rel = &#x27;https://api.w.org/&#x27;;
+
+	// Extract &#x26; parse the response link headers
+	var headers = parseLinkHeader( response.headers.link );
+	var apiHeader = headers &#x26;&#x26; headers[ rel ];
+
+	if ( apiHeader &#x26;&#x26; apiHeader.url ) {
+		return apiHeader.url;
+	}
+
+	throw new Error( &#x27;No header link found with rel=&#x22;https://api.w.org/&#x22;&#x27; );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.autodiscovery.resolveAsPromise" id="apidoc.element.wordpress-rest-api.autodiscovery.resolveAsPromise">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.autodiscovery.</span>resolveAsPromise
+        <span class="apidocSignatureSpan">( superagentReq )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resolveAsPromise( superagentReq ) {
+	return new Promise(function( resolve, reject ) {
+		superagentReq.end(function( err, res ) {
+			if ( err ) {
+				// If err.response is present, the request succeeded but we got an
+				// error from the server: surface &#x26; return that error
+				if ( err.response &#x26;&#x26; err.response.error ) {
+					return reject( err.response.error );
+				}
+				// If err.response is not present, the request could not connect
+				return reject( err );
+			}
+			resolve( res );
+		});
+	});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.wordpress-rest-api.endpoint_factories" id="apidoc.module.wordpress-rest-api.endpoint_factories">module wordpress-rest-api.endpoint_factories</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.endpoint_factories.generate" id="apidoc.element.wordpress-rest-api.endpoint_factories.generate">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.endpoint_factories.</span>generate
+        <span class="apidocSignatureSpan">( routesByNamespace )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function generateEndpointFactories( routesByNamespace ) {
+
+	return Object.keys( routesByNamespace ).reduce(function( namespaces, namespace ) {
+		var routeDefinitions = routesByNamespace[ namespace ];
+
+		// Create
+		namespaces[ namespace ] = Object.keys( routeDefinitions ).reduce(function( handlers, resource ) {
+
+			var handlerSpec = createResourceHandlerSpec( routeDefinitions[ resource ], resource );
+
+			var EndpointRequest = createEndpointRequest( handlerSpec, resource, namespace );
+
+			// &#x22;handler&#x22; object is now fully prepared; create the factory method that
+			// will instantiate and return a handler instance
+			handlers[ resource ] = function( options ) {
+				options = options || {};
+				options = extend( options, this._options );
+				return new EndpointRequest( options );
+			};
+
+			// Expose the constructor as a property on the factory function, so that
+			// auto-generated endpoint request constructors may be further customized
+			// when needed
+			handlers[ resource ].Ctor = EndpointRequest;
+
+			return handlers;
+		}, {} );
+
+		return namespaces;
+	}, {} );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.wordpress-rest-api.endpoint_request" id="apidoc.module.wordpress-rest-api.endpoint_request">module wordpress-rest-api.endpoint_request</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.endpoint_request.create" id="apidoc.element.wordpress-rest-api.endpoint_request.create">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.endpoint_request.</span>create
+        <span class="apidocSignatureSpan">( handlerSpec, resource, namespace )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createEndpointRequest( handlerSpec, resource, namespace ) {
+
+	// Create the constructor function for this endpoint
+	function EndpointRequest( options ) {
+		WPRequest.call( this, options );
+
+		<span class="apidocCodeCommentSpan">/**
+		 * Semi-private instance property specifying the available URL path options
+		 * for this endpoint request handler, keyed by ascending whole numbers.
+		 *
+		 * @property _levels
+		 * @type {object}
+		 * @private
+		 */
+</span>		this._levels = handlerSpec._levels;
+
+		// Configure handler for this endpoint&#x27;s root URL path &#x26; set namespace
+		this
+			.setPathPart( 0, resource )
+			.namespace( namespace );
+	}
+
+	inherit( EndpointRequest, WPRequest );
+
+	// Mix in all available shortcut methods for GET request query parameters that
+	// are valid within this endpoint tree
+	if ( typeof handlerSpec._getArgs === &#x27;object&#x27; ) {
+		Object.keys( handlerSpec._getArgs ).forEach(function( supportedQueryParam ) {
+			var mixinsForParam = mixins[ supportedQueryParam ];
+
+			// Only proceed if there is a mixin available AND the specified mixins will
+			// not overwrite any previously-set prototype method
+			if ( mixinsForParam ) {
+				Object.keys( mixinsForParam ).forEach(function( methodName ) {
+					if ( ! EndpointRequest.prototype[ methodName ] ) {
+						EndpointRequest.prototype[ methodName ] = mixinsForParam[ methodName ];
+					}
+				});
+			}
+		});
+	}
+
+	Object.keys( handlerSpec._setters ).forEach(function( setterFnName ) {
+		if ( EndpointRequest.prototype[ setterFnName ] ) {
+			console.warn( &#x27;Warning: method .&#x27; + setterFnName + &#x27;() is already defined!&#x27; );
+			console.warn( &#x27;Cannot overwrite .&#x27; + resource + &#x27;().&#x27; + setterFnName + &#x27;() method&#x27; );
+		} else {
+			EndpointRequest.prototype[ setterFnName ] = handlerSpec._setters[ setterFnName ];
+		}
+	});
+
+	return EndpointRequest;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// my-endpoint-response.json file, with no need to wait for a Promise.
+
+site.namespace( &#x27;myplugin/v1&#x27; ).authors()...
+```
+
+To create a slimmed JSON file dedicated to this particular purpose, see the Node script [lib/data/generate-endpoint-request.js](
+lib/data/generate-endpoint-request.js), which will let you download and save an endpoint response to your local project.
+
+In addition to retrieving the specified resource with `.get()`, you can also `.<span class="apidocCodeKeywordSpan">create</span>()`, `.
+update()` and `.delete()` resources:
+
+### Creating Posts
+
+To create posts, use the `.create()` method on a query to POST (the HTTP verb for &#x22;create&#x22;) a data object to the server
+:
+
+```js
+// You must authenticate to be able to POST (create) a post
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.wordpress-rest-api.path_part_setter" id="apidoc.module.wordpress-rest-api.path_part_setter">module wordpress-rest-api.path_part_setter</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.path_part_setter.create" id="apidoc.element.wordpress-rest-api.path_part_setter.create">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.path_part_setter.</span>create
+        <span class="apidocSignatureSpan">( node )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createPathPartSetter( node ) {
+	// Local references to `node` properties used by returned functions
+	var nodeLevel = node.level;
+	var nodeName = node.names[ 0 ];
+	var supportedMethods = node.methods || [];
+	var dynamicChildren = node.children ? Object.keys( node.children )
+		.map(function( key ) {
+			return node.children[ key ];
+		})
+		.filter(function( childNode ) {
+			return childNode.namedGroup === true;
+		}) : [];
+	var dynamicChild = dynamicChildren.length === 1 &#x26;&#x26; dynamicChildren[ 0 ];
+	var dynamicChildLevel = dynamicChild &#x26;&#x26; dynamicChild.level;
+
+	if ( node.namedGroup ) {
+		<span class="apidocCodeCommentSpan">/**
+		 * Set a dymanic (named-group) path part of a query URL.
+		 *
+		 * @example
+		 *
+		 *     // id() is a dynamic path part setter:
+		 *     wp.posts().id( 7 ); // Get posts/7
+		 *
+		 * @chainable
+		 * @param  {String|Number} val The path part value to set
+		 * @return {Object} The handler instance (for chaining)
+		 */
+</span>		return function( val ) {
+			/* jshint validthis:true */
+			this.setPathPart( nodeLevel, val );
+			if ( supportedMethods.length ) {
+				this._supportedMethods = supportedMethods;
+			}
+			return this;
+		};
+	} else {
+		/**
+		 * Set a non-dymanic (non-named-group) path part of a query URL, and
+		 * set the value of a subresource if an input value is provided and
+		 * exactly one named-group child node exists.
+		 *
+		 * @example
+		 *
+		 *     // revisions() is a non-dynamic path part setter:
+		 *     wp.posts().id( 4 ).revisions();       // Get posts/4/revisions
+		 *     wp.posts().id( 4 ).revisions( 1372 ); // Get posts/4/revisions/1372
+		 *
+		 * @chainable
+		 * @param  {String|Number} [val] The path part value to set (if provided)
+		 *                               for a subresource within this resource
+		 * @return {Object} The handler instance (for chaining)
+		 */
+		return function( val ) {
+			/* jshint validthis:true */
+			// If the path part is not a namedGroup, it should have exactly one
+			// entry in the names array: use that as the value for this setter,
+			// as it will usually correspond to a collection endpoint.
+			this.setPathPart( nodeLevel, nodeName );
+
+			// If this node has exactly one dynamic child, this method may act as
+			// a setter for that child node. `dynamicChildLevel` will be falsy if the
+			// node does not have a child or has multiple children.
+			if ( typeof val !== &#x27;undefined&#x27; &#x26;&#x26; dynamicChildLevel ) {
+				this.setPathPart( dynamicChildLevel, val );
+			}
+			return this;
+		};
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// my-endpoint-response.json file, with no need to wait for a Promise.
+
+site.namespace( &#x27;myplugin/v1&#x27; ).authors()...
+```
+
+To create a slimmed JSON file dedicated to this particular purpose, see the Node script [lib/data/generate-endpoint-request.js](
+lib/data/generate-endpoint-request.js), which will let you download and save an endpoint response to your local project.
+
+In addition to retrieving the specified resource with `.get()`, you can also `.<span class="apidocCodeKeywordSpan">create</span>()`, `.
+update()` and `.delete()` resources:
+
+### Creating Posts
+
+To create posts, use the `.create()` method on a query to POST (the HTTP verb for &#x22;create&#x22;) a data object to the server
+:
+
+```js
+// You must authenticate to be able to POST (create) a post
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.wordpress-rest-api.resource_handler_spec" id="apidoc.module.wordpress-rest-api.resource_handler_spec">module wordpress-rest-api.resource_handler_spec</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.resource_handler_spec.create" id="apidoc.element.wordpress-rest-api.resource_handler_spec.create">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.resource_handler_spec.</span>create
+        <span class="apidocSignatureSpan">( routeDefinition, resource )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createNodeHandlerSpec( routeDefinition, resource ) {
+
+	var handler = {
+		// A &#x22;path&#x22; is an ordered (by key) set of values composed into the final URL
+		_path: {
+			&#x27;0&#x27;: resource
+		},
+
+		// A &#x22;level&#x22; is a level-keyed object representing the valid options for
+		// one level of the resource URL
+		_levels: {},
+
+		// Objects that hold methods and properties which will be copied to
+		// instances of this endpoint&#x27;s handler
+		_setters: {},
+
+		// Arguments (query parameters) that may be set in GET requests to endpoints
+		// nested within this resource route tree, used to determine the mixins to
+		// add to the request handler
+		_getArgs: routeDefinition._getArgs
+	};
+
+	// Walk the tree
+	Object.keys( routeDefinition ).forEach(function( routeDefProp ) {
+		if ( routeDefProp !== &#x27;_getArgs&#x27; ) {
+			extractSetterFromNode( handler, routeDefinition[ routeDefProp ] );
+		}
+	});
+
+	return handler;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// my-endpoint-response.json file, with no need to wait for a Promise.
+
+site.namespace( &#x27;myplugin/v1&#x27; ).authors()...
+```
+
+To create a slimmed JSON file dedicated to this particular purpose, see the Node script [lib/data/generate-endpoint-request.js](
+lib/data/generate-endpoint-request.js), which will let you download and save an endpoint response to your local project.
+
+In addition to retrieving the specified resource with `.get()`, you can also `.<span class="apidocCodeKeywordSpan">create</span>()`, `.
+update()` and `.delete()` resources:
+
+### Creating Posts
+
+To create posts, use the `.create()` method on a query to POST (the HTTP verb for &#x22;create&#x22;) a data object to the server
+:
+
+```js
+// You must authenticate to be able to POST (create) a post
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.wordpress-rest-api.route_tree" id="apidoc.module.wordpress-rest-api.route_tree">module wordpress-rest-api.route_tree</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.route_tree.build" id="apidoc.element.wordpress-rest-api.route_tree.build">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.route_tree.</span>build
+        <span class="apidocSignatureSpan">( routes )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function buildRouteTree( routes ) {
+	return Object.keys( routes ).reduce( reduceRouteTree.bind( null, routes ), {} );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
