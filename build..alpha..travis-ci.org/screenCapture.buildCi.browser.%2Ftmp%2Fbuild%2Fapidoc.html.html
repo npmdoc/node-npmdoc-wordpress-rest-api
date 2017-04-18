@@ -56,6 +56,24 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wordpress-rest-api">
+            function <span class="apidocSignatureSpan"></span>wordpress-rest-api
+            <span class="apidocSignatureSpan">( options )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.Gruntfile">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>Gruntfile
+            <span class="apidocSignatureSpan">( grunt )</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.discover">
             function <span class="apidocSignatureSpan">wordpress-rest-api.</span>discover
             <span class="apidocSignatureSpan">( url )</span>
@@ -68,6 +86,24 @@
             <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.site">
             function <span class="apidocSignatureSpan">wordpress-rest-api.</span>site
             <span class="apidocSignatureSpan">( endpoint, routes )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.toString">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_register_route">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>wp_register_route
+            <span class="apidocSignatureSpan">( namespace, restBase, options )</span>
             </a>
 
         </li>
@@ -110,6 +146,19 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.Gruntfile">module wordpress-rest-api.Gruntfile</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.Gruntfile.Gruntfile">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>Gruntfile
+            <span class="apidocSignatureSpan">( grunt )</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.autodiscovery">module wordpress-rest-api.autodiscovery</a><ol>
 
         <li>
@@ -144,6 +193,19 @@
             <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.autodiscovery.resolveAsPromise">
             function <span class="apidocSignatureSpan">wordpress-rest-api.autodiscovery.</span>resolveAsPromise
             <span class="apidocSignatureSpan">( superagentReq )</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.discover">module wordpress-rest-api.discover</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.discover.discover">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>discover
+            <span class="apidocSignatureSpan">( url )</span>
             </a>
 
         </li>
@@ -215,10 +277,123 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.site">module wordpress-rest-api.site</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.site.site">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>site
+            <span class="apidocSignatureSpan">( endpoint, routes )</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.toString">module wordpress-rest-api.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.toString.toString">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.wp_register_route">module wordpress-rest-api.wp_register_route</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_register_route.wp_register_route">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>wp_register_route
+            <span class="apidocSignatureSpan">( namespace, restBase, options )</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.wordpress-rest-api" id="apidoc.module.wordpress-rest-api">module wordpress-rest-api</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wordpress-rest-api" id="apidoc.element.wordpress-rest-api.wordpress-rest-api">
+        function <span class="apidocSignatureSpan"></span>wordpress-rest-api
+        <span class="apidocSignatureSpan">( options )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function WP( options ) {
+
+	// Enforce `new`
+	if ( this instanceof WP === false ) {
+		return new WP( options );
+	}
+
+	// Dictionary to be filled by handlers for default namespaces
+	this._ns = {};
+
+	this._options = extend( {}, defaults, options );
+
+	if ( ! this._options.endpoint ) {
+		throw new Error( 'options hash must contain an API endpoint URL string' );
+	}
+
+	// Ensure trailing slash on endpoint URI
+	this._options.endpoint = this._options.endpoint.replace( /\/?$/, '/' );
+
+	return this.bootstrap( options &amp;&amp; options.routes );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.Gruntfile" id="apidoc.element.wordpress-rest-api.Gruntfile">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>Gruntfile
+        <span class="apidocSignatureSpan">( grunt )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Gruntfile = function ( grunt ) {
+
+	grunt.initConfig({
+
+		pkg: grunt.file.readJSON( 'package.json' ),
+
+		yuidoc: {
+			compile: {
+				name: '&lt;%= pkg.name %&gt;',
+				description: '&lt;%= pkg.description %&gt;',
+				version: '&lt;%= pkg.version %&gt;',
+				url: '&lt;%= pkg.homepage %&gt;',
+				options: {
+					ignorePaths: [ 'node_modules', 'tests' ],
+					paths: '.',
+					themedir: './docs-theme',
+					// theme: 'simple',
+					outdir: 'docs/',
+					tabtospace: 2
+				}
+			}
+		}
+
+	});
+
+	grunt.loadNpmTasks( 'grunt-contrib-yuidoc' );
+
+	grunt.registerTask( 'docs', [ 'yuidoc' ] );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
@@ -319,6 +494,93 @@ wp/v2` namespace will be bound to your instance object itself. The rest can be a
 
 
 
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.toString" id="apidoc.element.wordpress-rest-api.toString">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_register_route" id="apidoc.element.wordpress-rest-api.wp_register_route">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>wp_register_route
+        <span class="apidocSignatureSpan">( namespace, restBase, options )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function registerRoute( namespace, restBase, options ) {
+	// Support all methods until requested to do otherwise
+	var supportedMethods = [ 'head', 'get', 'patch', 'put', 'post', 'delete' ];
+
+	if ( options &amp;&amp; Array.isArray( options.methods ) ) {
+		// Permit supported methods to be specified as an array
+		supportedMethods = options.methods.map(function( method ) {
+			return method.trim().toLowerCase();
+		});
+	} else if ( options &amp;&amp; typeof options.methods === 'string' ) {
+		// Permit a supported method to be specified as a string
+		supportedMethods = [ options.methods.trim().toLowerCase() ];
+	}
+
+	// Ensure that if GET is supported, then HEAD is as well, and vice-versa
+	if ( supportedMethods.indexOf( 'get' ) !== -1 &amp;&amp; supportedMethods.indexOf( 'head' ) === -1 ) {
+		supportedMethods.push( 'head' );
+	} else if ( supportedMethods.indexOf( 'head' ) !== -1 &amp;&amp; supportedMethods.indexOf( 'get' ) === -1 ) {
+		supportedMethods.push( 'get' );
+	}
+
+	var fullRoute = namespace
+		// Route should always have preceding slash
+		.replace( /^[\s/]*/, '/' )
+		// Route should always be joined to namespace with a single slash
+		.replace( /[\s/]*$/, '/' ) + restBase.replace( /^[\s/]*/, '' );
+
+	var routeObj = {};
+	routeObj[ fullRoute ] = {
+		namespace: namespace,
+		methods: supportedMethods
+	};
+
+	// Go through the same steps used to bootstrap the client to parse the
+	// provided route out into a handler request method
+	var routeTree = buildRouteTree( routeObj );
+	// Parse the mock route object into endpoint factories
+	var endpointFactories = generateEndpointFactories( routeTree )[ namespace ];
+	var EndpointRequest = endpointFactories[ Object.keys( endpointFactories )[ 0 ] ].Ctor;
+
+	if ( options &amp;&amp; typeof options.mixins === 'object' ) {
+
+		// Set any specified mixin functions on the response
+		Object.keys( options.mixins ).forEach(function( key ) {
+			var mixin = options.mixins[ key ];
+
+			// Will not overwrite existing methods
+			if ( typeof mixin === 'function' &amp;&amp; ! EndpointRequest.prototype[ key ] ) {
+				EndpointRequest.prototype[ key ] = options.mixins[ key ];
+			}
+		});
+	}
+
+	function endpointFactory( options ) {
+		<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>		options = options || {};
+		options = extend( options, this &amp;&amp; this._options );
+		return new EndpointRequest( options );
+	}
+	endpointFactory.Ctor = EndpointRequest;
+
+	return endpointFactory;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
 
 
 
@@ -328,6 +590,55 @@ wp/v2` namespace will be bound to your instance object itself. The rest can be a
 
 
 
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.wordpress-rest-api.Gruntfile" id="apidoc.module.wordpress-rest-api.Gruntfile">module wordpress-rest-api.Gruntfile</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.Gruntfile.Gruntfile" id="apidoc.element.wordpress-rest-api.Gruntfile.Gruntfile">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>Gruntfile
+        <span class="apidocSignatureSpan">( grunt )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Gruntfile = function ( grunt ) {
+
+	grunt.initConfig({
+
+		pkg: grunt.file.readJSON( 'package.json' ),
+
+		yuidoc: {
+			compile: {
+				name: '&lt;%= pkg.name %&gt;',
+				description: '&lt;%= pkg.description %&gt;',
+				version: '&lt;%= pkg.version %&gt;',
+				url: '&lt;%= pkg.homepage %&gt;',
+				options: {
+					ignorePaths: [ 'node_modules', 'tests' ],
+					paths: '.',
+					themedir: './docs-theme',
+					// theme: 'simple',
+					outdir: 'docs/',
+					tabtospace: 2
+				}
+			}
+		}
+
+	});
+
+	grunt.loadNpmTasks( 'grunt-contrib-yuidoc' );
+
+	grunt.registerTask( 'docs', [ 'yuidoc' ] );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
 
 
 </div>
@@ -449,6 +760,75 @@ WP.discover = function( url ) {
 	});
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.wordpress-rest-api.discover" id="apidoc.module.wordpress-rest-api.discover">module wordpress-rest-api.discover</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.discover.discover" id="apidoc.element.wordpress-rest-api.discover.discover">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>discover
+        <span class="apidocSignatureSpan">( url )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">discover = function ( url ) {
+	// local placeholder for API root URL
+	var endpoint;
+
+	return autodiscovery.getAPIRootFromURL( url )
+		.then( autodiscovery.locateAPIRootHeader )
+		.then(function( apiRootURL ) {
+			// Set the function-scope variable that will be used to instantiate
+			// the bound WP instance, then pass the URL on
+			endpoint = apiRootURL;
+			return apiRootURL;
+		})
+		.then( autodiscovery.getRootResponseJSON )
+		.then(function( apiRootJSON ) {
+			// Instantiate &amp; bootstrap with the discovered methods
+			return new WP({
+				endpoint: endpoint,
+				routes: apiRootJSON.routes
+			});
+		})
+		.catch(function( err ) {
+			console.error( 'Autodiscovery failed' );
+			console.error( err );
+			if ( endpoint ) {
+				console.warn( 'Endpoint detected, proceeding despite error...' );
+				console.warn( 'Binding to ' + endpoint + ' and assuming default routes' );
+				return new WP.site( endpoint );
+			}
+			return null;
+		});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+The `wp` object will have endpoint handler methods for every endpoint that ships with the default WordPress REST API plugin.
+
+### Auto-Discovery
+
+It is also possible to leverage the [capability discovery](http://v2.wp-api.org/guide/discovery/) features of the API to automatically
+ detect and add setter methods for your custom routes, or routes added by plugins.
+
+To utilize the auto-discovery functionality, call `WP.<span class="apidocCodeKeywordSpan">discover</span>()` with a URL within a
+ WordPress REST API-enabled site:
+```js
+var apiPromise = WP.discover( 'http://my-site.com' );
+```
+If auto-discovery succeeds this method returns a promise that will be resolved with a WP client instance object configured specifically
+ for your site. You can use that promise as the queue that your client instance is ready, then use the client normally within the
+ `.then` callback.
+
+**Custom Routes** will be detected by this process, and registered on the client. To prevent name conflicts, only routes in the `
+wp/v2` namespace will be bound to your instance object itself. The rest can be accessed through the `.namespace` method on the WP
+ instance, as demonstrated below.
+...</pre></li>
     </ul>
 
 
@@ -777,6 +1157,143 @@ To create posts, use the `.create()` method on a query to POST (the HTTP verb fo
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function buildRouteTree( routes ) {
 	return Object.keys( routes ).reduce( reduceRouteTree.bind( null, routes ), {} );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.wordpress-rest-api.site" id="apidoc.module.wordpress-rest-api.site">module wordpress-rest-api.site</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.site.site" id="apidoc.element.wordpress-rest-api.site.site">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>site
+        <span class="apidocSignatureSpan">( endpoint, routes )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">site = function ( endpoint, routes ) {
+	return new WP({
+		endpoint: endpoint,
+		routes: routes
+	});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+* Convenience method for making a new WP instance
+*
+* @example
+* These are equivalent:
+*
+*     var wp = new WP({ endpoint: 'http://my.blog.url/wp-json' });
+*     var wp = WP.<span class="apidocCodeKeywordSpan">site</span>( 'http://my.blog.url/wp-json' );
+*
+* `WP.site` can take an optional API root response JSON object to use when
+* bootstrapping the client's endpoint handler methods: if no second parameter
+* is provided, the client instance is assumed to be using the default API
+* with no additional plugins and is initialized with handlers for only those
+* default API routes.
+*
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.wordpress-rest-api.toString" id="apidoc.module.wordpress-rest-api.toString">module wordpress-rest-api.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.toString.toString" id="apidoc.element.wordpress-rest-api.toString.toString">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.wordpress-rest-api.wp_register_route" id="apidoc.module.wordpress-rest-api.wp_register_route">module wordpress-rest-api.wp_register_route</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_register_route.wp_register_route" id="apidoc.element.wordpress-rest-api.wp_register_route.wp_register_route">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>wp_register_route
+        <span class="apidocSignatureSpan">( namespace, restBase, options )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function registerRoute( namespace, restBase, options ) {
+	// Support all methods until requested to do otherwise
+	var supportedMethods = [ 'head', 'get', 'patch', 'put', 'post', 'delete' ];
+
+	if ( options &amp;&amp; Array.isArray( options.methods ) ) {
+		// Permit supported methods to be specified as an array
+		supportedMethods = options.methods.map(function( method ) {
+			return method.trim().toLowerCase();
+		});
+	} else if ( options &amp;&amp; typeof options.methods === 'string' ) {
+		// Permit a supported method to be specified as a string
+		supportedMethods = [ options.methods.trim().toLowerCase() ];
+	}
+
+	// Ensure that if GET is supported, then HEAD is as well, and vice-versa
+	if ( supportedMethods.indexOf( 'get' ) !== -1 &amp;&amp; supportedMethods.indexOf( 'head' ) === -1 ) {
+		supportedMethods.push( 'head' );
+	} else if ( supportedMethods.indexOf( 'head' ) !== -1 &amp;&amp; supportedMethods.indexOf( 'get' ) === -1 ) {
+		supportedMethods.push( 'get' );
+	}
+
+	var fullRoute = namespace
+		// Route should always have preceding slash
+		.replace( /^[\s/]*/, '/' )
+		// Route should always be joined to namespace with a single slash
+		.replace( /[\s/]*$/, '/' ) + restBase.replace( /^[\s/]*/, '' );
+
+	var routeObj = {};
+	routeObj[ fullRoute ] = {
+		namespace: namespace,
+		methods: supportedMethods
+	};
+
+	// Go through the same steps used to bootstrap the client to parse the
+	// provided route out into a handler request method
+	var routeTree = buildRouteTree( routeObj );
+	// Parse the mock route object into endpoint factories
+	var endpointFactories = generateEndpointFactories( routeTree )[ namespace ];
+	var EndpointRequest = endpointFactories[ Object.keys( endpointFactories )[ 0 ] ].Ctor;
+
+	if ( options &amp;&amp; typeof options.mixins === 'object' ) {
+
+		// Set any specified mixin functions on the response
+		Object.keys( options.mixins ).forEach(function( key ) {
+			var mixin = options.mixins[ key ];
+
+			// Will not overwrite existing methods
+			if ( typeof mixin === 'function' &amp;&amp; ! EndpointRequest.prototype[ key ] ) {
+				EndpointRequest.prototype[ key ] = options.mixins[ key ];
+			}
+		});
+	}
+
+	function endpointFactory( options ) {
+		<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>		options = options || {};
+		options = extend( options, this &amp;&amp; this._options );
+		return new EndpointRequest( options );
+	}
+	endpointFactory.Ctor = EndpointRequest;
+
+	return endpointFactory;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
