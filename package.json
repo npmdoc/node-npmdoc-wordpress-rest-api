@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "wordpress-rest-api",
-    "description": "api documentation for [wordpress-rest-api (v0.8.0)](https://github.com/kadamwhite/wordpress-rest-api) [![npm package](https://img.shields.io/npm/v/npmdoc-wordpress-rest-api.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-wordpress-rest-api) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-wordpress-rest-api.svg)](https://travis-ci.org/npmdoc/node-npmdoc-wordpress-rest-api)",
+    "description": "#### api documentation for  [wordpress-rest-api (v0.8.0)](https://github.com/kadamwhite/wordpress-rest-api)  [![npm package](https://img.shields.io/npm/v/npmdoc-wordpress-rest-api.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-wordpress-rest-api) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-wordpress-rest-api.svg)](https://travis-ci.org/npmdoc/node-npmdoc-wordpress-rest-api)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha",
@@ -36,5 +36,5 @@
         "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
         "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
-    "version": "0.0.1"
+    "version": "0.0.2"
 }
