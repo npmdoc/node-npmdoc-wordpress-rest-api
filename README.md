@@ -1,6 +1,6 @@
 # npmdoc-wordpress-rest-api
 
-#### api documentation for  [wordpress-rest-api (v0.8.0)](https://github.com/kadamwhite/wordpress-rest-api)  [![npm package](https://img.shields.io/npm/v/npmdoc-wordpress-rest-api.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-wordpress-rest-api) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-wordpress-rest-api.svg)](https://travis-ci.org/npmdoc/node-npmdoc-wordpress-rest-api)
+#### basic api documentation for  [wordpress-rest-api (v0.8.0)](https://github.com/kadamwhite/wordpress-rest-api)  [![npm package](https://img.shields.io/npm/v/npmdoc-wordpress-rest-api.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-wordpress-rest-api) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-wordpress-rest-api.svg)](https://travis-ci.org/npmdoc/node-npmdoc-wordpress-rest-api)
 
 #### A client for interacting with the WordPress REST API
 
@@ -103,7 +103,8 @@
         "test:unit": "_mocha tests/unit --recursive --reporter=nyan",
         "watch": "grunt watch"
     },
-    "version": "0.8.0"
+    "version": "0.8.0",
+    "bin": {}
 }
 ```
 
