@@ -65,15 +65,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.Gruntfile">
-            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>Gruntfile
-            <span class="apidocSignatureSpan">( grunt )</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.discover">
             function <span class="apidocSignatureSpan">wordpress-rest-api.</span>discover
             <span class="apidocSignatureSpan">( url )</span>
@@ -92,18 +83,9 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.toString">
-            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_register_route">
-            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>wp_register_route
-            <span class="apidocSignatureSpan">( namespace, restBase, options )</span>
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>wp_request
+            <span class="apidocSignatureSpan">( options )</span>
             </a>
 
         </li>
@@ -128,13 +110,19 @@
 
         <li>
 
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">wordpress-rest-api.</span>path_part_setter</span>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">wordpress-rest-api.</span>filters</span>
 
         </li>
 
         <li>
 
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">wordpress-rest-api.</span>resource_handler_spec</span>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">wordpress-rest-api.</span>parameters</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">wordpress-rest-api.</span>path_part_setter</span>
 
         </li>
 
@@ -144,16 +132,9 @@
 
         </li>
 
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.Gruntfile">module wordpress-rest-api.Gruntfile</a><ol>
-
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.Gruntfile.Gruntfile">
-            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>Gruntfile
-            <span class="apidocSignatureSpan">( grunt )</span>
-            </a>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">wordpress-rest-api.</span>wp_request.prototype</span>
 
         </li>
 
@@ -199,19 +180,6 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.discover">module wordpress-rest-api.discover</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.discover.discover">
-            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>discover
-            <span class="apidocSignatureSpan">( url )</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
     <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.endpoint_factories">module wordpress-rest-api.endpoint_factories</a><ol>
 
         <li>
@@ -238,6 +206,158 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.filters">module wordpress-rest-api.filters</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.filters.category">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.filters.</span>category
+            <span class="apidocSignatureSpan">( category )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.filters.day">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.filters.</span>day
+            <span class="apidocSignatureSpan">( day )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.filters.filter">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.filters.</span>filter
+            <span class="apidocSignatureSpan">( props, value )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.filters.month">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.filters.</span>month
+            <span class="apidocSignatureSpan">( month )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.filters.path">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.filters.</span>path
+            <span class="apidocSignatureSpan">( path )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.filters.tag">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.filters.</span>tag
+            <span class="apidocSignatureSpan">( tag )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.filters.taxonomy">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.filters.</span>taxonomy
+            <span class="apidocSignatureSpan">( taxonomy, term )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.filters.year">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.filters.</span>year
+            <span class="apidocSignatureSpan">( year )</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.parameters">module wordpress-rest-api.parameters</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.parameters.author">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.parameters.</span>author
+            <span class="apidocSignatureSpan">( author )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.parameters.forPost">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.parameters.</span>forPost
+            <span class="apidocSignatureSpan">( postId )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.parameters.name">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.parameters.</span>name
+            <span class="apidocSignatureSpan">( slug )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.parameters.page">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.parameters.</span>page
+            <span class="apidocSignatureSpan">( pageNumber )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.parameters.parent">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.parameters.</span>parent
+            <span class="apidocSignatureSpan">( parentId )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.parameters.perPage">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.parameters.</span>perPage
+            <span class="apidocSignatureSpan">( itemsPerPage )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.parameters.search">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.parameters.</span>search
+            <span class="apidocSignatureSpan">( searchString )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.parameters.slug">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.parameters.</span>slug
+            <span class="apidocSignatureSpan">( slug )</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.path_part_setter">module wordpress-rest-api.path_part_setter</a><ol>
 
         <li>
@@ -245,19 +365,6 @@
             <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.path_part_setter.create">
             function <span class="apidocSignatureSpan">wordpress-rest-api.path_part_setter.</span>create
             <span class="apidocSignatureSpan">( node )</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.resource_handler_spec">module wordpress-rest-api.resource_handler_spec</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.resource_handler_spec.create">
-            function <span class="apidocSignatureSpan">wordpress-rest-api.resource_handler_spec.</span>create
-            <span class="apidocSignatureSpan">( routeDefinition, resource )</span>
             </a>
 
         </li>
@@ -277,39 +384,251 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.site">module wordpress-rest-api.site</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.wp_request">module wordpress-rest-api.wp_request</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.site.site">
-            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>site
-            <span class="apidocSignatureSpan">( endpoint, routes )</span>
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.wp_request">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>wp_request
+            <span class="apidocSignatureSpan">( options )</span>
             </a>
 
         </li>
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.toString">module wordpress-rest-api.toString</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.wp_request.prototype">module wordpress-rest-api.wp_request.prototype</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.toString.toString">
-            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>toString
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype._auth">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_auth
+            <span class="apidocSignatureSpan">( request, forceAuthentication )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype._checkMethodSupport">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_checkMethodSupport
+            <span class="apidocSignatureSpan">( method )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype._httpDelete">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_httpDelete
+            <span class="apidocSignatureSpan">( data, callback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype._httpGet">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_httpGet
+            <span class="apidocSignatureSpan">( callback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype._httpHead">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_httpHead
+            <span class="apidocSignatureSpan">( callback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype._httpPost">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_httpPost
+            <span class="apidocSignatureSpan">( data, callback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype._httpPut">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_httpPut
+            <span class="apidocSignatureSpan">( data, callback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype._renderPath">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_renderPath
             <span class="apidocSignatureSpan">()</span>
             </a>
 
         </li>
 
-    </ol></li>
+        <li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.wordpress-rest-api.wp_register_route">module wordpress-rest-api.wp_register_route</a><ol>
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype._renderQuery">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_renderQuery
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_register_route.wp_register_route">
-            function <span class="apidocSignatureSpan">wordpress-rest-api.</span>wp_register_route
-            <span class="apidocSignatureSpan">( namespace, restBase, options )</span>
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype._renderURI">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_renderURI
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype.auth">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>auth
+            <span class="apidocSignatureSpan">( usrOrObj, password )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype.context">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>context
+            <span class="apidocSignatureSpan">( context )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype.create">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>create
+            <span class="apidocSignatureSpan">( data, callback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype.delete">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>delete
+            <span class="apidocSignatureSpan">( data, callback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype.edit">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>edit
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype.embed">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>embed
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype.get">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>get
+            <span class="apidocSignatureSpan">( callback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype.headers">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>headers
+            <span class="apidocSignatureSpan">( callback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype.namespace">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>namespace
+            <span class="apidocSignatureSpan">( namespace )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype.param">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>param
+            <span class="apidocSignatureSpan">( props, value, merge )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype.post">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>post
+            <span class="apidocSignatureSpan">( data, callback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype.put">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>put
+            <span class="apidocSignatureSpan">( data, callback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype.setPathPart">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>setPathPart
+            <span class="apidocSignatureSpan">( level, val )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype.then">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>then
+            <span class="apidocSignatureSpan">( successCallback, failureCallback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype.update">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>update
+            <span class="apidocSignatureSpan">( data, callback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.wordpress-rest-api.wp_request.prototype.validatePath">
+            function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>validatePath
+            <span class="apidocSignatureSpan">()</span>
             </a>
 
         </li>
@@ -349,47 +668,6 @@
 	this._options.endpoint = this._options.endpoint.replace( /\/?$/, '/' );
 
 	return this.bootstrap( options &amp;&amp; options.routes );
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.wordpress-rest-api.Gruntfile" id="apidoc.element.wordpress-rest-api.Gruntfile">
-        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>Gruntfile
-        <span class="apidocSignatureSpan">( grunt )</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">Gruntfile = function ( grunt ) {
-
-	grunt.initConfig({
-
-		pkg: grunt.file.readJSON( 'package.json' ),
-
-		yuidoc: {
-			compile: {
-				name: '&lt;%= pkg.name %&gt;',
-				description: '&lt;%= pkg.description %&gt;',
-				version: '&lt;%= pkg.version %&gt;',
-				url: '&lt;%= pkg.homepage %&gt;',
-				options: {
-					ignorePaths: [ 'node_modules', 'tests' ],
-					paths: '.',
-					themedir: './docs-theme',
-					// theme: 'simple',
-					outdir: 'docs/',
-					tabtospace: 2
-				}
-			}
-		}
-
-	});
-
-	grunt.loadNpmTasks( 'grunt-contrib-yuidoc' );
-
-	grunt.registerTask( 'docs', [ 'yuidoc' ] );
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -495,89 +773,55 @@ wp/v2` namespace will be bound to your instance object itself. The rest can be a
 
 
     <h2>
-        <a href="#apidoc.element.wordpress-rest-api.toString" id="apidoc.element.wordpress-rest-api.toString">
-        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>toString
-        <span class="apidocSignatureSpan">()</span>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request" id="apidoc.element.wordpress-rest-api.wp_request">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>wp_request
+        <span class="apidocSignatureSpan">( options )</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
+    <li>description and source-code<pre class="apidocCodePre">function WPRequest( options ) {
+	<span class="apidocCodeCommentSpan">/**
+	 * Configuration options for the request such as the endpoint for the invoking WP instance
+	 *
+	 * @property _options
+	 * @type Object
+	 * @private
+	 * @default {}
+	 */
+</span>	this._options = options || {};
 
+	/**
+	 * A hash of query parameters
+	 * This is used to store the values for supported query parameters like ?_embed
+	 *
+	 * @property _params
+	 * @type Object
+	 * @private
+	 * @default {}
+	 */
+	this._params = {};
 
+	/**
+	 * Methods supported by this API request instance:
+	 * Individual endpoint handlers specify their own subset of supported methods
+	 *
+	 * @property _supportedMethods
+	 * @type Array
+	 * @private
+	 * @default [ 'head', 'get', 'put', 'post', 'delete' ]
+	 */
+	this._supportedMethods = [ 'head', 'get', 'put', 'post', 'delete' ];
 
-    <h2>
-        <a href="#apidoc.element.wordpress-rest-api.wp_register_route" id="apidoc.element.wordpress-rest-api.wp_register_route">
-        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>wp_register_route
-        <span class="apidocSignatureSpan">( namespace, restBase, options )</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function registerRoute( namespace, restBase, options ) {
-	// Support all methods until requested to do otherwise
-	var supportedMethods = [ 'head', 'get', 'patch', 'put', 'post', 'delete' ];
-
-	if ( options &amp;&amp; Array.isArray( options.methods ) ) {
-		// Permit supported methods to be specified as an array
-		supportedMethods = options.methods.map(function( method ) {
-			return method.trim().toLowerCase();
-		});
-	} else if ( options &amp;&amp; typeof options.methods === 'string' ) {
-		// Permit a supported method to be specified as a string
-		supportedMethods = [ options.methods.trim().toLowerCase() ];
-	}
-
-	// Ensure that if GET is supported, then HEAD is as well, and vice-versa
-	if ( supportedMethods.indexOf( 'get' ) !== -1 &amp;&amp; supportedMethods.indexOf( 'head' ) === -1 ) {
-		supportedMethods.push( 'head' );
-	} else if ( supportedMethods.indexOf( 'head' ) !== -1 &amp;&amp; supportedMethods.indexOf( 'get' ) === -1 ) {
-		supportedMethods.push( 'get' );
-	}
-
-	var fullRoute = namespace
-		// Route should always have preceding slash
-		.replace( /^[\s/]*/, '/' )
-		// Route should always be joined to namespace with a single slash
-		.replace( /[\s/]*$/, '/' ) + restBase.replace( /^[\s/]*/, '' );
-
-	var routeObj = {};
-	routeObj[ fullRoute ] = {
-		namespace: namespace,
-		methods: supportedMethods
-	};
-
-	// Go through the same steps used to bootstrap the client to parse the
-	// provided route out into a handler request method
-	var routeTree = buildRouteTree( routeObj );
-	// Parse the mock route object into endpoint factories
-	var endpointFactories = generateEndpointFactories( routeTree )[ namespace ];
-	var EndpointRequest = endpointFactories[ Object.keys( endpointFactories )[ 0 ] ].Ctor;
-
-	if ( options &amp;&amp; typeof options.mixins === 'object' ) {
-
-		// Set any specified mixin functions on the response
-		Object.keys( options.mixins ).forEach(function( key ) {
-			var mixin = options.mixins[ key ];
-
-			// Will not overwrite existing methods
-			if ( typeof mixin === 'function' &amp;&amp; ! EndpointRequest.prototype[ key ] ) {
-				EndpointRequest.prototype[ key ] = options.mixins[ key ];
-			}
-		});
-	}
-
-	function endpointFactory( options ) {
-		<span class="apidocCodeCommentSpan">/* jshint validthis:true */
-</span>		options = options || {};
-		options = extend( options, this &amp;&amp; this._options );
-		return new EndpointRequest( options );
-	}
-	endpointFactory.Ctor = EndpointRequest;
-
-	return endpointFactory;
+	/**
+	 * A hash of values to assemble into the API request path
+	 * (This will be overwritten by each specific endpoint handler constructor)
+	 *
+	 * @property _path
+	 * @type Object
+	 * @private
+	 * @default {}
+	 */
+	this._path = {};
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -595,50 +839,8 @@ wp/v2` namespace will be bound to your instance object itself. The rest can be a
 
 
 
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.wordpress-rest-api.Gruntfile" id="apidoc.module.wordpress-rest-api.Gruntfile">module wordpress-rest-api.Gruntfile</a></h1>
 
 
-    <h2>
-        <a href="#apidoc.element.wordpress-rest-api.Gruntfile.Gruntfile" id="apidoc.element.wordpress-rest-api.Gruntfile.Gruntfile">
-        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>Gruntfile
-        <span class="apidocSignatureSpan">( grunt )</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">Gruntfile = function ( grunt ) {
-
-	grunt.initConfig({
-
-		pkg: grunt.file.readJSON( 'package.json' ),
-
-		yuidoc: {
-			compile: {
-				name: '&lt;%= pkg.name %&gt;',
-				description: '&lt;%= pkg.description %&gt;',
-				version: '&lt;%= pkg.version %&gt;',
-				url: '&lt;%= pkg.homepage %&gt;',
-				options: {
-					ignorePaths: [ 'node_modules', 'tests' ],
-					paths: '.',
-					themedir: './docs-theme',
-					// theme: 'simple',
-					outdir: 'docs/',
-					tabtospace: 2
-				}
-			}
-		}
-
-	});
-
-	grunt.loadNpmTasks( 'grunt-contrib-yuidoc' );
-
-	grunt.registerTask( 'docs', [ 'yuidoc' ] );
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
 
 
 </div>
@@ -760,75 +962,6 @@ WP.discover = function( url ) {
 	});
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.wordpress-rest-api.discover" id="apidoc.module.wordpress-rest-api.discover">module wordpress-rest-api.discover</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.wordpress-rest-api.discover.discover" id="apidoc.element.wordpress-rest-api.discover.discover">
-        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>discover
-        <span class="apidocSignatureSpan">( url )</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">discover = function ( url ) {
-	// local placeholder for API root URL
-	var endpoint;
-
-	return autodiscovery.getAPIRootFromURL( url )
-		.then( autodiscovery.locateAPIRootHeader )
-		.then(function( apiRootURL ) {
-			// Set the function-scope variable that will be used to instantiate
-			// the bound WP instance, then pass the URL on
-			endpoint = apiRootURL;
-			return apiRootURL;
-		})
-		.then( autodiscovery.getRootResponseJSON )
-		.then(function( apiRootJSON ) {
-			// Instantiate &amp; bootstrap with the discovered methods
-			return new WP({
-				endpoint: endpoint,
-				routes: apiRootJSON.routes
-			});
-		})
-		.catch(function( err ) {
-			console.error( 'Autodiscovery failed' );
-			console.error( err );
-			if ( endpoint ) {
-				console.warn( 'Endpoint detected, proceeding despite error...' );
-				console.warn( 'Binding to ' + endpoint + ' and assuming default routes' );
-				return new WP.site( endpoint );
-			}
-			return null;
-		});
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-```
-The `wp` object will have endpoint handler methods for every endpoint that ships with the default WordPress REST API plugin.
-
-### Auto-Discovery
-
-It is also possible to leverage the [capability discovery](http://v2.wp-api.org/guide/discovery/) features of the API to automatically
- detect and add setter methods for your custom routes, or routes added by plugins.
-
-To utilize the auto-discovery functionality, call `WP.<span class="apidocCodeKeywordSpan">discover</span>()` with a URL within a
- WordPress REST API-enabled site:
-```js
-var apiPromise = WP.discover( 'http://my-site.com' );
-```
-If auto-discovery succeeds this method returns a promise that will be resolved with a WP client instance object configured specifically
- for your site. You can use that promise as the queue that your client instance is ready, then use the client normally within the
- `.then` callback.
-
-**Custom Routes** will be detected by this process, and registered on the client. To prevent name conflicts, only routes in the `
-wp/v2` namespace will be bound to your instance object itself. The rest can be accessed through the `.namespace` method on the WP
- instance, as demonstrated below.
-...</pre></li>
     </ul>
 
 
@@ -972,6 +1105,638 @@ To create posts, use the `.create()` method on a query to POST (the HTTP verb fo
 </div>
 
 <div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.wordpress-rest-api.filters" id="apidoc.module.wordpress-rest-api.filters">module wordpress-rest-api.filters</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.filters.category" id="apidoc.element.wordpress-rest-api.filters.category">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.filters.</span>category
+        <span class="apidocSignatureSpan">( category )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">category = function ( category ) {
+	<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>	return filterMixins.taxonomy.call( this, 'category', category );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+wp.posts().filter({
+    category_name: 'islands',
+    tag: [ 'clouds', 'sunset' ]
+}).get();
+
+// Convenience methods exist for filtering by taxonomy terms
+// 'category' can accept either numeric IDs, or string slugs, but not both!
+wp.posts().<span class="apidocCodeKeywordSpan">category</span>( 7 ).tag( 'music' ).get();
+
+// Convenience methods also exist for specifying an author: this can also take
+// either a numeric ID, or a nicename string. Unlike tags, setting a new value
+// will erase any prior value, regardless of type.
+
+// equivalent to .filter( 'author_name', 'williamgibson' ):
+wp.posts().author( 'williamgibson' ).get();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.filters.day" id="apidoc.element.wordpress-rest-api.filters.day">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.filters.</span>day
+        <span class="apidocSignatureSpan">( day )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">day = function ( day ) {
+	<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>	return filterMixins.filter.call( this, 'day', day );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* `.taxonomy( name, term )`: find items with a specific taxonomy term
+* `.search( searchString )`: find posts containing the specified search term(s)
+* `.author( author )`: find posts by a specific author, designated either by name or by ID
+* `.name( slug )`: find the post with the specified slug
+* `.slug( slug )`: alias for `.name()`
+* `.year( year )`: find items published in the specified year
+* `.month( month )`: find items published in the specified month, designated by the month index (1&amp;ndash;12) or name (*e.g.* &amp;#
+x22;February")
+* `.<span class="apidocCodeKeywordSpan">day</span>( day )`: find items published on the specified day
+
+### Custom Routes
+
+Support for Custom Post Types is provided via the `.registerRoute` method. This method returns a handler function which can be assigned
+ to your site instance as a method, and takes the [same namespace and route string arguments as `rest_register_route`](http://v2
+.wp-api.org/extending/adding/#bare-basics):
+
+```js
+var site = new WP({ endpoint: 'http://www.yoursite.com/wp-json' });
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.filters.filter" id="apidoc.element.wordpress-rest-api.filters.filter">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.filters.</span>filter
+        <span class="apidocSignatureSpan">( props, value )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">filter = function ( props, value ) {
+	<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>
+	if ( ! props || _.isString( props ) &amp;&amp; typeof value === 'undefined' ) {
+		// We have no filter to set, or no value to set for that filter
+		return this;
+	}
+
+	// convert the property name string `props` and value `value` into an object
+	if ( _.isString( props ) ) {
+		props = _.zipObject([[ props, value ]]);
+	}
+
+	this._filters = extend( this._filters, props );
+
+	return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Filtering Collections
+
+Queries against collection endpoints (like `wp.posts()`, which maps to `endpoint/posts/`) can be filtered to specify a subset of
+ posts to return. Many of the WP_Query values are available by default, including `tag`, `author_name`, `page_id`, etc; even more
+ parameters are available to filter byif you authenticate with the API using either [Basic Auth](https://github.com/WP-API/Basic
+-Auth) or [OAuth](https://github.com/WP-API/OAuth1). You can continue to chain properties until you call `.then`, `.get`, `.post
+`, `.put`, or `.delete` on the request chain.
+
+Example queries:
+```javascript
+// All posts belonging to author with nicename "jadenbeirne"
+wp.posts().<span class="apidocCodeKeywordSpan">filter</span>( 'author_name', 'jadenbeirne' ).get();
+
+// All posts in category "islands" and tags "clouds" &amp; "sunset"
+// (filter can either accept two parameters, as above where it's called with
+// a key and a value, or an object of parameter keys and values, as below)
+wp.posts().filter({
+category_name: 'islands',
+tag: [ 'clouds', 'sunset' ]
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.filters.month" id="apidoc.element.wordpress-rest-api.filters.month">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.filters.</span>month
+        <span class="apidocSignatureSpan">( month )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">month = function ( month ) {
+	<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>	var monthDate;
+	if ( _.isString( month ) ) {
+		// Append a arbitrary day and year to the month to parse the string into a Date
+		monthDate = new Date( Date.parse( month + ' 1, 2012' ) );
+
+		// If the generated Date is NaN, then the passed string is not a valid month
+		if ( isNaN( monthDate ) ) {
+			return this;
+		}
+
+		// JS Dates are 0 indexed, but the WP API requires a 1-indexed integer
+		month = monthDate.getMonth() + 1;
+	}
+
+	// If month is a Number, add the monthnum filter to the request
+	if ( _.isNumber( month ) ) {
+		return filterMixins.filter.call( this, 'monthnum', month );
+	}
+
+	return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* `.tag( tag )`: find posts with a specific tag
+* `.taxonomy( name, term )`: find items with a specific taxonomy term
+* `.search( searchString )`: find posts containing the specified search term(s)
+* `.author( author )`: find posts by a specific author, designated either by name or by ID
+* `.name( slug )`: find the post with the specified slug
+* `.slug( slug )`: alias for `.name()`
+* `.year( year )`: find items published in the specified year
+* `.<span class="apidocCodeKeywordSpan">month</span>( month )`: find items published in the specified month, designated by the month
+ index (1&amp;ndash;12) or name (*e.g.* "February")
+* `.day( day )`: find items published on the specified day
+
+### Custom Routes
+
+Support for Custom Post Types is provided via the `.registerRoute` method. This method returns a handler function which can be assigned
+ to your site instance as a method, and takes the [same namespace and route string arguments as `rest_register_route`](http://v2
+.wp-api.org/extending/adding/#bare-basics):
+
+```js
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.filters.path" id="apidoc.element.wordpress-rest-api.filters.path">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.filters.</span>path
+        <span class="apidocSignatureSpan">( path )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">path = function ( path ) {
+	<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>	return filterMixins.filter.call( this, 'pagename', path );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+- `wp.posts()`: get a collection of posts (default query)
+- `wp.posts().id( n )`: get the post with ID *n*
+- `wp.posts().id( n ).revisions()`: get a collection of revisions for the post with ID *n*
+- `wp.posts().id( n ).revisions( rn )`: get revision *rn* for the post with ID *n*
+* **pages**
+- `wp.pages()`: get a collection of page items
+- `wp.pages().id( n )`: get the page with numeric ID *n*
+- `wp.pages().<span class="apidocCodeKeywordSpan">path</span>( 'path/str' )`: get the page with the root-relative URL
+path `path/str`
+- `wp.pages().id( n ).revisions()`: get a collection of revisions for the page with ID *n*
+- `wp.pages().id( n ).revisions( rn )`: get revision *rn* for the page with ID *n*
+* **comments**
+- `wp.comments()`: get a collection of all public comments
+- `wp.comments().id( n )`: get the comment with ID *n*
+* **taxonomies**
+- `wp.taxonomies()`: retrieve all registered taxonomies
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.filters.tag" id="apidoc.element.wordpress-rest-api.filters.tag">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.filters.</span>tag
+        <span class="apidocSignatureSpan">( tag )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tag = function ( tag ) {
+	<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>	return filterMixins.taxonomy.call( this, 'tag', tag );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+wp.posts().filter({
+    category_name: 'islands',
+    tag: [ 'clouds', 'sunset' ]
+}).get();
+
+// Convenience methods exist for filtering by taxonomy terms
+// 'category' can accept either numeric IDs, or string slugs, but not both!
+wp.posts().category( 7 ).<span class="apidocCodeKeywordSpan">tag</span>( 'music' ).get();
+
+// Convenience methods also exist for specifying an author: this can also take
+// either a numeric ID, or a nicename string. Unlike tags, setting a new value
+// will erase any prior value, regardless of type.
+
+// equivalent to .filter( 'author_name', 'williamgibson' ):
+wp.posts().author( 'williamgibson' ).get();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.filters.taxonomy" id="apidoc.element.wordpress-rest-api.filters.taxonomy">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.filters.</span>taxonomy
+        <span class="apidocSignatureSpan">( taxonomy, term )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">taxonomy = function ( taxonomy, term ) {
+	<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>	var termIsArray = _.isArray( term );
+	var termIsNumber = termIsArray ?
+		term.reduce(function( allAreNumbers, term ) {
+			return allAreNumbers &amp;&amp; _.isNumber( term );
+		}, true ) :
+		_.isNumber( term );
+	var termIsString = termIsArray ?
+		term.reduce(function( allAreStrings, term ) {
+			return allAreStrings &amp;&amp; _.isString( term );
+		}, true ) :
+		_.isString( term );
+	var taxonomyTerms;
+
+	if ( ! termIsString &amp;&amp; ! termIsNumber ) {
+		throw new Error( 'term must be a number, string, or array of numbers or strings' );
+	}
+
+	if ( taxonomy === 'category' ) {
+		if ( termIsString ) {
+			// Query param for filtering by category slug is "category_name"
+			taxonomy = 'category_name';
+		} else {
+			// The boolean check above ensures that if taxonomy === 'category' and
+			// term is not a string, then term must be a number and therefore an ID:
+			// Query param for filtering by category ID is "cat"
+			taxonomy = 'cat';
+		}
+	} else if ( taxonomy === 'post_tag' ) {
+		// tag is used in place of post_tag in the public query variables
+		taxonomy = 'tag';
+	}
+
+	// Ensure the taxonomy filters object is available
+	this._taxonomyFilters = this._taxonomyFilters || {};
+
+	// Ensure there's an array of terms available for this taxonomy
+	taxonomyTerms = ( this._taxonomyFilters[ taxonomy ] || [] )
+		// Insert the provided terms into the specified taxonomy's terms array
+		.concat( term )
+		// Sort array
+		.sort( alphaNumericSort );
+
+	// De-dupe
+	this._taxonomyFilters[ taxonomy ] = _.unique( taxonomyTerms, true );
+
+	return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+- `wp.pages().id( n ).revisions()`: get a collection of revisions for the page with ID *n*
+- `wp.pages().id( n ).revisions( rn )`: get revision *rn* for the page with ID *n*
+* **comments**
+- `wp.comments()`: get a collection of all public comments
+- `wp.comments().id( n )`: get the comment with ID *n*
+* **taxonomies**
+- `wp.taxonomies()`: retrieve all registered taxonomies
+- `wp.taxonomies().<span class="apidocCodeKeywordSpan">taxonomy</span>( 'taxonomy_name' )`: get a specific taxonomy object
+ with name *taxonomy_name*
+- `wp.taxonomies().taxonomy( 'taxonomy_name' ).terms()`: get all terms for taxonomy *taxonomy_name*
+- `wp.taxonomies().taxonomy( 'taxonomy_name' ).term( termIdentifier )`: get the term with slug or ID *termIdentifier*
+from the taxonomy *taxonomy_name*
+* **categories**
+- `wp.categories()`: retrieve all registered categories
+- `wp.categories().id( n )`: get a specific category object with id *n*
+* **tags**
+- `wp.tags()`: retrieve all registered tags
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.filters.year" id="apidoc.element.wordpress-rest-api.filters.year">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.filters.</span>year
+        <span class="apidocSignatureSpan">( year )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">year = function ( year ) {
+	<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>	return filterMixins.filter.call( this, 'year', year );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* `.category( category )`: find posts in a specific category
+* `.tag( tag )`: find posts with a specific tag
+* `.taxonomy( name, term )`: find items with a specific taxonomy term
+* `.search( searchString )`: find posts containing the specified search term(s)
+* `.author( author )`: find posts by a specific author, designated either by name or by ID
+* `.name( slug )`: find the post with the specified slug
+* `.slug( slug )`: alias for `.name()`
+* `.<span class="apidocCodeKeywordSpan">year</span>( year )`: find items published in the specified year
+* `.month( month )`: find items published in the specified month, designated by the month index (1&amp;ndash;12) or name (*e.g.* &amp;#
+x22;February")
+* `.day( day )`: find items published on the specified day
+
+### Custom Routes
+
+Support for Custom Post Types is provided via the `.registerRoute` method. This method returns a handler function which can be assigned
+ to your site instance as a method, and takes the [same namespace and route string arguments as `rest_register_route`](http://v2
+.wp-api.org/extending/adding/#bare-basics):
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.wordpress-rest-api.parameters" id="apidoc.module.wordpress-rest-api.parameters">module wordpress-rest-api.parameters</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.parameters.author" id="apidoc.element.wordpress-rest-api.parameters.author">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.parameters.</span>author
+        <span class="apidocSignatureSpan">( author )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">author = function ( author ) {
+	<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>	if ( typeof author === 'undefined' ) {
+		return this;
+	}
+	if ( _.isString( author ) ) {
+		this.param( 'author', null );
+		return filter.call( this, 'author_name', author );
+	}
+	if ( _.isNumber( author ) ) {
+		filter.call( this, 'author_name', null );
+		return this.param( 'author', author );
+	}
+	if ( author === null ) {
+		filter.call( this, 'author_name', null );
+		return this.param( 'author', null );
+	}
+	throw new Error( 'author must be either a nicename string or numeric ID' );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+wp.posts().category( 7 ).tag( 'music' ).get();
+
+// Convenience methods also exist for specifying an author: this can also take
+// either a numeric ID, or a nicename string. Unlike tags, setting a new value
+// will erase any prior value, regardless of type.
+
+// equivalent to .filter( 'author_name', 'williamgibson' ):
+wp.posts().<span class="apidocCodeKeywordSpan">author</span>( 'williamgibson' ).get();
+// equivalent to .filter( 'author', 42 ):
+wp.posts().author( 42 ).get();
+// last value wins: this queries for author_name == frankherbert
+wp.posts().author( 42 ).author( 'frankherbert' ).get();
+
+// perPage() sets the maximum number of posts to return. 20 latest posts:
+wp.posts().perPage( 20 )...
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.parameters.forPost" id="apidoc.element.wordpress-rest-api.parameters.forPost">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.parameters.</span>forPost
+        <span class="apidocSignatureSpan">( postId )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">forPost = function ( postId ) {
+	<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>	return this.param( 'post', postId );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+				// Find the categories for this post
+				postCategories = _.findWhere( post._embedded['wp:term'], function( terms ) {
+					if ( terms.length &amp;&amp; terms[ 0 ].taxonomy === 'category' ) {
+						return true;
+					}
+				});
+				var postId = post.id;
+				return wp.categories().<span class="apidocCodeKeywordSpan">forPost</span>( postId );
+			}).then(function( categories ) {
+				expect( categories.length ).to.equal( postCategories.length );
+				categories.forEach(function( cat, idx ) {
+					[
+						'id',
+						'name',
+						'slug',
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.parameters.name" id="apidoc.element.wordpress-rest-api.parameters.name">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.parameters.</span>name
+        <span class="apidocSignatureSpan">( slug )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">name = function ( slug ) {
+	<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>	return parameterMixins.slug.call( this, slug );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+The following methods are shortcuts for filtering the requested collection down by various commonly-used criteria:
+
+* `.category( category )`: find posts in a specific category
+* `.tag( tag )`: find posts with a specific tag
+* `.taxonomy( name, term )`: find items with a specific taxonomy term
+* `.search( searchString )`: find posts containing the specified search term(s)
+* `.author( author )`: find posts by a specific author, designated either by name or by ID
+* `.<span class="apidocCodeKeywordSpan">name</span>( slug )`: find the post with the specified slug
+* `.slug( slug )`: alias for `.name()`
+* `.year( year )`: find items published in the specified year
+* `.month( month )`: find items published in the specified month, designated by the month index (1&amp;ndash;12) or name (*e.g.* &amp;#
+x22;February")
+* `.day( day )`: find items published on the specified day
+
+### Custom Routes
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.parameters.page" id="apidoc.element.wordpress-rest-api.parameters.page">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.parameters.</span>page
+        <span class="apidocSignatureSpan">( pageNumber )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">page = function ( pageNumber ) {
+	<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>	return this.param( 'page', pageNumber );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+wp.posts().author( 42 ).get();
+// last value wins: this queries for author_name == frankherbert
+wp.posts().author( 42 ).author( 'frankherbert' ).get();
+
+// perPage() sets the maximum number of posts to return. 20 latest posts:
+wp.posts().perPage( 20 )...
+// 21st through 40th latest posts (*i.e.* the second page of results):
+wp.posts().perPage( 20 ).<span class="apidocCodeKeywordSpan">page</span>( 2 )...
+
+// Put it all together: Get the 5 most recent posts by jadenbeirne in 'fiction'
+wp.posts()
+.author( 'jadenbeirne' )
+.perPage( 5 )
+.tag( 'fiction' )
+.get();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.parameters.parent" id="apidoc.element.wordpress-rest-api.parameters.parent">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.parameters.</span>parent
+        <span class="apidocSignatureSpan">( parentId )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parent = function ( parentId ) {
+	<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>	return this.param( 'parent', parentId, true );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+/**
+* Search for hierarchical taxonomy terms that are children of the parent term
+* indicated by the provided term ID
+*
+* @example
+*
+*     wp.pages().<span class="apidocCodeKeywordSpan">parent</span>( 3 ).then(function( pages ) {
+*       // console.log( 'all of these pages are nested below page ID#3:' );
+*       // console.log( pages );
+*     });
+*
+*     wp.categories().parent( 42 ).then(function( categories ) {
+*       console.log( 'all of these categories are sub-items of cat ID#42:' );
+*       console.log( categories );
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.parameters.perPage" id="apidoc.element.wordpress-rest-api.parameters.perPage">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.parameters.</span>perPage
+        <span class="apidocSignatureSpan">( itemsPerPage )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">perPage = function ( itemsPerPage ) {
+	<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>	return this.param( 'per_page', itemsPerPage );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+wp.posts().author( 'williamgibson' ).get();
+// equivalent to .filter( 'author', 42 ):
+wp.posts().author( 42 ).get();
+// last value wins: this queries for author_name == frankherbert
+wp.posts().author( 42 ).author( 'frankherbert' ).get();
+
+// perPage() sets the maximum number of posts to return. 20 latest posts:
+wp.posts().<span class="apidocCodeKeywordSpan">perPage</span>( 20 )...
+// 21st through 40th latest posts (*i.e.* the second page of results):
+wp.posts().perPage( 20 ).page( 2 )...
+
+// Put it all together: Get the 5 most recent posts by jadenbeirne in 'fiction'
+wp.posts()
+.author( 'jadenbeirne' )
+.perPage( 5 )
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.parameters.search" id="apidoc.element.wordpress-rest-api.parameters.search">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.parameters.</span>search
+        <span class="apidocSignatureSpan">( searchString )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">search = function ( searchString ) {
+	<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>	return this.param( 'search',  searchString );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+**Filtering Shortcut Methods**
+
+The following methods are shortcuts for filtering the requested collection down by various commonly-used criteria:
+
+* `.category( category )`: find posts in a specific category
+* `.tag( tag )`: find posts with a specific tag
+* `.taxonomy( name, term )`: find items with a specific taxonomy term
+* `.<span class="apidocCodeKeywordSpan">search</span>( searchString )`: find posts containing the specified search term(s)
+* `.author( author )`: find posts by a specific author, designated either by name or by ID
+* `.name( slug )`: find the post with the specified slug
+* `.slug( slug )`: alias for `.name()`
+* `.year( year )`: find items published in the specified year
+* `.month( month )`: find items published in the specified month, designated by the month index (1&amp;ndash;12) or name (*e.g.* &amp;#
+x22;February")
+* `.day( day )`: find items published on the specified day
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.parameters.slug" id="apidoc.element.wordpress-rest-api.parameters.slug">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.parameters.</span>slug
+        <span class="apidocSignatureSpan">( slug )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">slug = function ( slug ) {
+	<span class="apidocCodeCommentSpan">/* jshint validthis:true */
+</span>	return this.param( 'slug', slug );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+* `.category( category )`: find posts in a specific category
+* `.tag( tag )`: find posts with a specific tag
+* `.taxonomy( name, term )`: find items with a specific taxonomy term
+* `.search( searchString )`: find posts containing the specified search term(s)
+* `.author( author )`: find posts by a specific author, designated either by name or by ID
+* `.name( slug )`: find the post with the specified slug
+* `.<span class="apidocCodeKeywordSpan">slug</span>( slug )`: alias for `.name()`
+* `.year( year )`: find items published in the specified year
+* `.month( month )`: find items published in the specified month, designated by the month index (1&amp;ndash;12) or name (*e.g.* &amp;#
+x22;February")
+* `.day( day )`: find items published on the specified day
+
+### Custom Routes
+
+Support for Custom Post Types is provided via the `.registerRoute` method. This method returns a handler function which can be assigned
+ to your site instance as a method, and takes the [same namespace and route string arguments as `rest_register_route`](http://v2
+.wp-api.org/extending/adding/#bare-basics):
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.wordpress-rest-api.path_part_setter" id="apidoc.module.wordpress-rest-api.path_part_setter">module wordpress-rest-api.path_part_setter</a></h1>
 
 
@@ -1078,46 +1843,597 @@ To create posts, use the `.create()` method on a query to POST (the HTTP verb fo
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.wordpress-rest-api.resource_handler_spec" id="apidoc.module.wordpress-rest-api.resource_handler_spec">module wordpress-rest-api.resource_handler_spec</a></h1>
+<h1><a href="#apidoc.module.wordpress-rest-api.route_tree" id="apidoc.module.wordpress-rest-api.route_tree">module wordpress-rest-api.route_tree</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.wordpress-rest-api.resource_handler_spec.create" id="apidoc.element.wordpress-rest-api.resource_handler_spec.create">
-        function <span class="apidocSignatureSpan">wordpress-rest-api.resource_handler_spec.</span>create
-        <span class="apidocSignatureSpan">( routeDefinition, resource )</span>
+        <a href="#apidoc.element.wordpress-rest-api.route_tree.build" id="apidoc.element.wordpress-rest-api.route_tree.build">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.route_tree.</span>build
+        <span class="apidocSignatureSpan">( routes )</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function createNodeHandlerSpec( routeDefinition, resource ) {
+    <li>description and source-code<pre class="apidocCodePre">function buildRouteTree( routes ) {
+	return Object.keys( routes ).reduce( reduceRouteTree.bind( null, routes ), {} );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
 
-	var handler = {
-		// A "path" is an ordered (by key) set of values composed into the final URL
-		_path: {
-			'0': resource
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.wordpress-rest-api.wp_request" id="apidoc.module.wordpress-rest-api.wp_request">module wordpress-rest-api.wp_request</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.wp_request" id="apidoc.element.wordpress-rest-api.wp_request.wp_request">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>wp_request
+        <span class="apidocSignatureSpan">( options )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function WPRequest( options ) {
+	<span class="apidocCodeCommentSpan">/**
+	 * Configuration options for the request such as the endpoint for the invoking WP instance
+	 *
+	 * @property _options
+	 * @type Object
+	 * @private
+	 * @default {}
+	 */
+</span>	this._options = options || {};
+
+	/**
+	 * A hash of query parameters
+	 * This is used to store the values for supported query parameters like ?_embed
+	 *
+	 * @property _params
+	 * @type Object
+	 * @private
+	 * @default {}
+	 */
+	this._params = {};
+
+	/**
+	 * Methods supported by this API request instance:
+	 * Individual endpoint handlers specify their own subset of supported methods
+	 *
+	 * @property _supportedMethods
+	 * @type Array
+	 * @private
+	 * @default [ 'head', 'get', 'put', 'post', 'delete' ]
+	 */
+	this._supportedMethods = [ 'head', 'get', 'put', 'post', 'delete' ];
+
+	/**
+	 * A hash of values to assemble into the API request path
+	 * (This will be overwritten by each specific endpoint handler constructor)
+	 *
+	 * @property _path
+	 * @type Object
+	 * @private
+	 * @default {}
+	 */
+	this._path = {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.wordpress-rest-api.wp_request.prototype" id="apidoc.module.wordpress-rest-api.wp_request.prototype">module wordpress-rest-api.wp_request.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype._auth" id="apidoc.element.wordpress-rest-api.wp_request.prototype._auth">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_auth
+        <span class="apidocSignatureSpan">( request, forceAuthentication )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_auth = function ( request, forceAuthentication ) {
+	// If we're not supposed to authenticate, don't even start
+	if ( ! forceAuthentication &amp;&amp; ! this._options.auth &amp;&amp; ! this._options.nonce ) {
+		return request;
+	}
+
+	// Enable nonce in options for Cookie authentication http://wp-api.org/guides/authentication.html
+	if ( this._options.nonce ) {
+		request.set( 'X-WP-Nonce', this._options.nonce );
+		return request;
+	}
+
+	// Retrieve the username &amp; password from the request options if they weren't provided
+	var username = username || this._options.username;
+	var password = password || this._options.password;
+
+	// If no username or no password, can't authenticate
+	if ( ! username || ! password ) {
+		return request;
+	}
+
+	// Can authenticate: set basic auth parameters on the request
+	return request.auth( username, password );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @param {Function} [callback] A callback to invoke with the results of the GET request
+* @return {Promise} A promise to the results of the HTTP request
+*/
+WPRequest.prototype._httpGet = function( callback ) {
+	this._checkMethodSupport( 'get' );
+	var url = this._renderURI();
+
+	var request = this.<span class="apidocCodeKeywordSpan">_auth</span>( agent.get( url ) );
+
+	return invokeAndPromisify( request, callback, returnBody.bind( this ) );
+};
+
+/**
+* Invoke an HTTP "POST" request against the provided endpoint
+* @method _httpPost
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype._checkMethodSupport" id="apidoc.element.wordpress-rest-api.wp_request.prototype._checkMethodSupport">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_checkMethodSupport
+        <span class="apidocSignatureSpan">( method )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_checkMethodSupport = function ( method ) {
+	if ( this._supportedMethods.indexOf( method.toLowerCase() ) === -1 ) {
+		throw new Error(
+			'Unsupported method; supported methods are: ' +
+			this._supportedMethods.join( ', ' )
+		);
+	}
+
+	return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @method _httpGet
+ * @async
+ * @private
+ * @param {Function} [callback] A callback to invoke with the results of the GET request
+ * @return {Promise} A promise to the results of the HTTP request
+ */
+WPRequest.prototype._httpGet = function( callback ) {
+	this.<span class="apidocCodeKeywordSpan">_checkMethodSupport</span>( 'get' );
+	var url = this._renderURI();
+
+	var request = this._auth( agent.get( url ) );
+
+	return invokeAndPromisify( request, callback, returnBody.bind( this ) );
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype._httpDelete" id="apidoc.element.wordpress-rest-api.wp_request.prototype._httpDelete">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_httpDelete
+        <span class="apidocSignatureSpan">( data, callback )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_httpDelete = function ( data, callback ) {
+	if ( ! callback &amp;&amp; typeof data === 'function' ) {
+		callback = data;
+		data = null;
+	}
+	this._checkMethodSupport( 'delete' );
+	var url = this._renderURI();
+	var request = this._auth( agent.del( url ), true ).send( data );
+
+	return invokeAndPromisify( request, callback, returnBody.bind( this ) );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @method delete
+* @async
+* @param {Object} [data] Data to send along with the DELETE request
+* @param {Function} [callback] A callback to invoke with the results of the DELETE request
+* @return {Promise} A promise to the results of the HTTP request
+*/
+WPRequest.prototype.delete = function( data, callback ) {
+	return this.<span class="apidocCodeKeywordSpan">_httpDelete</span>( data, callback );
+};
+
+/**
+* Calling .then on a query chain will invoke the query as a GET and return a promise
+*
+* @method then
+* @async
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype._httpGet" id="apidoc.element.wordpress-rest-api.wp_request.prototype._httpGet">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_httpGet
+        <span class="apidocSignatureSpan">( callback )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_httpGet = function ( callback ) {
+	this._checkMethodSupport( 'get' );
+	var url = this._renderURI();
+
+	var request = this._auth( agent.get( url ) );
+
+	return invokeAndPromisify( request, callback, returnBody.bind( this ) );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+* @method get
+* @async
+* @param {Function} [callback] A callback to invoke with the results of the GET request
+* @return {Promise} A promise to the results of the HTTP request
+*/
+WPRequest.prototype.get = function( callback ) {
+	return this.<span class="apidocCodeKeywordSpan">_httpGet</span>( callback );
+};
+
+/**
+* Create a HEAD request against a site
+* @method headers
+* @async
+* @param {Function} [callback] A callback to invoke with the results of the HEAD request
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype._httpHead" id="apidoc.element.wordpress-rest-api.wp_request.prototype._httpHead">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_httpHead
+        <span class="apidocSignatureSpan">( callback )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_httpHead = function ( callback ) {
+	this._checkMethodSupport( 'head' );
+	var url = this._renderURI();
+	var request = this._auth( agent.head( url ) );
+
+	return invokeAndPromisify( request, callback, returnHeaders );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* Create a HEAD request against a site
+* @method headers
+* @async
+* @param {Function} [callback] A callback to invoke with the results of the HEAD request
+* @return {Promise} A promise to the header results of the HTTP request
+*/
+WPRequest.prototype.headers = function( callback ) {
+	return this.<span class="apidocCodeKeywordSpan">_httpHead</span>( callback );
+};
+
+/**
+* Invoke an HTTP "POST" request against the provided endpoint
+*
+* This is the public interface creating for POST requests
+*
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype._httpPost" id="apidoc.element.wordpress-rest-api.wp_request.prototype._httpPost">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_httpPost
+        <span class="apidocSignatureSpan">( data, callback )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_httpPost = function ( data, callback ) {
+	this._checkMethodSupport( 'post' );
+	var url = this._renderURI();
+	data = data || {};
+
+	var request = this._auth( agent.post( url ), true ).send( data );
+
+	return invokeAndPromisify( request, callback, returnBody.bind( this ) );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+
+// HTTP Methods: Public Interface
+// ==============================
+
+/** @deprecated Use .create() */
+WPRequest.prototype.post = function( data, callback ) {
+	return this.<span class="apidocCodeKeywordSpan">_httpPost</span>( data, callback );
+};
+
+/** @deprecated Use .update() */
+WPRequest.prototype.put = function( data, callback ) {
+	return this._httpPut( data, callback );
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype._httpPut" id="apidoc.element.wordpress-rest-api.wp_request.prototype._httpPut">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_httpPut
+        <span class="apidocSignatureSpan">( data, callback )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_httpPut = function ( data, callback ) {
+	this._checkMethodSupport( 'put' );
+	var url = this._renderURI();
+	data = data || {};
+
+	var request = this._auth( agent.put( url ), true ).send( data );
+
+	return invokeAndPromisify( request, callback, returnBody.bind( this ) );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/** @deprecated Use .create() */
+WPRequest.prototype.post = function( data, callback ) {
+	return this._httpPost( data, callback );
+};
+
+/** @deprecated Use .update() */
+WPRequest.prototype.put = function( data, callback ) {
+	return this.<span class="apidocCodeKeywordSpan">_httpPut</span>( data, callback );
+};
+
+/**
+* @method get
+* @async
+* @param {Function} [callback] A callback to invoke with the results of the GET request
+* @return {Promise} A promise to the results of the HTTP request
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype._renderPath" id="apidoc.element.wordpress-rest-api.wp_request.prototype._renderPath">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_renderPath
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_renderPath = function () {
+	// Call validatePath: if the provided path components are not well-formed,
+	// an error will be thrown
+	this.validatePath();
+
+	var pathParts = this._path;
+	var orderedPathParts = Object.keys( pathParts )
+		.sort(function( a, b ) {
+			var intA = parseInt( a, 10 );
+			var intB = parseInt( b, 10 );
+			return intA - intB;
+		})
+		.map(function( pathPartKey ) {
+			return pathParts[ pathPartKey ];
+		});
+
+	// Combine all parts of the path together, filtered to omit any components
+	// that are unspecified or empty strings, to create the full path template
+	var path = [
+		this._namespace
+	].concat( orderedPathParts ).filter( identity ).join( '/' );
+
+	return path;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @private
+ *
+ * @method _renderURI
+ * @return {String} The URI for the HTTP request to be sent
+ */
+WPRequest.prototype._renderURI = function() {
+	// Render the path to a string
+	var path = this.<span class="apidocCodeKeywordSpan">_renderPath</span>();
+
+	// Render the query string
+	var queryStr = this._renderQuery();
+
+	return this._options.endpoint + path + queryStr;
+};
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype._renderQuery" id="apidoc.element.wordpress-rest-api.wp_request.prototype._renderQuery">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_renderQuery
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_renderQuery = function () {
+	// Build the full query parameters object
+	var queryParams = extend( {}, populated( this._params ) );
+
+	// Prepare any taxonomies and merge with other filter values
+	var taxonomies = prepareTaxonomies( this._taxonomyFilters );
+	queryParams.filter = extend( {}, populated( this._filters ), taxonomies );
+
+	// Parse query parameters object into a query string, sorting the object
+	// properties by alphabetical order (consistent property ordering can make
+	// for easier caching of request URIs)
+	var queryString = qs.stringify( queryParams, { arrayFormat: 'brackets' } )
+		.split( '&amp;' )
+		.sort()
+		.join( '&amp;' );
+
+	// Prepend a "?" if a query is present, and return
+	return ( queryString === '' ) ? '' : '?' + queryString;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @return {String} The URI for the HTTP request to be sent
+*/
+WPRequest.prototype._renderURI = function() {
+	// Render the path to a string
+	var path = this._renderPath();
+
+	// Render the query string
+	var queryStr = this.<span class="apidocCodeKeywordSpan">_renderQuery</span>();
+
+	return this._options.endpoint + path + queryStr;
+};
+
+/**
+* Conditionally set basic authentication on a server request object
+*
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype._renderURI" id="apidoc.element.wordpress-rest-api.wp_request.prototype._renderURI">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>_renderURI
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_renderURI = function () {
+	// Render the path to a string
+	var path = this._renderPath();
+
+	// Render the query string
+	var queryStr = this._renderQuery();
+
+	return this._options.endpoint + path + queryStr;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+			"settings":
+			{
+				"buffer_size": 25487,
+				"line_ending": "Unix"
+			}
 		},
+		{
+			"contents": "'use strict';\nvar chai = require( 'chai' );\n// Variable to use as our \"
+;success token\" in promise assertions\nvar SUCCESS = 'success';\n// Chai-as-promised and the `expect( prom ).to.eventually.equal( SUCCESS ) is\n// used to ensure that the assertions running within the promise chains are\n// actually run.\nchai.use( require( 'chai-as-promised' ) );\nchai.use( require( 'sinon-chai' ) );\nvar expect = chai.expect;\nvar sinon = require( 'sinon' );\n\n/*jshint -W079 */// Suppress warning about redefiniton of `Promise`\nvar Promise = require( 'bluebird' );\n\nvar WP = require( '../../' );\nvar WPRequest = require( '../../lib/constructors/wp-request.js' );\nvar autodiscovery = require( '../../lib/autodiscovery' );\n\n// Define some arrays to use ensuring the returned data is what we expect\n// it to be (e.g. an array of the titles from posts on the first page)\nvar expectedResults = {\n	firstPostTitle: 'Markup: HTML Tags and Formatting'\n};\n\n// Inspecting the titles of the returned posts arrays is an easy way to\n// validate that the right page of results was returned\nfunction getTitles( posts ) {\n	return posts.map(function( post ) {\n		return post.title.rendered;\n	});\n}\n\ndescribe( 'integration: discover()', function() {\n	var apiPromise;\n	var sinonSandbox;\n\n	beforeEach(function() {\n		apiPromise = WP.discover( 'http://wpapi.loc' );\n		// Stub warn and error\n		sinonSandbox = sinon.sandbox.create();\n		sinonSandbox.stub( global.console, 'warn' );\n		sinonSandbox.stub( global.console, 'error' );\n	});\n\n	afterEach(function() {\n		// Restore sandbox\n		sinonSandbox.restore();\n	});\n\n	it( 'returns a promise', function() {\n		expect( apiPromise ).to.be.an.instanceOf( Promise );\n	});\n\n	it( 'eventually returns a configured WP instance', function() {\n		var prom = apiPromise.then(function( result ) {\n			expect( result ).to.be.an.instanceOf( WP );\n			expect( result.namespace( 'wp/v2' ) ).to.be.an( 'object' );\n			expect( result.posts ).to.be.a( 'function' );\n			expect( result.posts() ).to.be.an.instanceOf( WPRequest );\n			return SUCCESS;\n		});\n		return expect( prom ).to.eventually.equal( SUCCESS );\n	});\n\n	it( 'auto-binds to the detected endpoint on the provided site', function() {\n		var prom = apiPromise.then(function( site ) {\n			expect( site.posts().<span class="apidocCodeKeywordSpan">_renderURI</span>() ).to.equal( 'http://wpapi.loc/wp-json/wp/v2/posts' );\n			return SUCCESS;\n		});\n		return expect( prom ).to.eventually.equal( SUCCESS );\n	});\n\n	it( 'can correctly instantiate requests against the detected and bound site', function() {\n		var prom = apiPromise.then(function( site ) {\n			return site.posts();\n		}).then(function( posts ) {\n			expect( getTitles( posts )[ 0 ] ).to.equal( expectedResults.firstPostTitle );\n			return SUCCESS;\n		});\n		return expect( prom ).to.eventually.equal( SUCCESS );\n	});\n\n	describe( 'rejection states', function() {\n\n		beforeEach(function() {\n			sinon.stub( autodiscovery, 'getAPIRootFromURL' );\n			sinon.stub( autodiscovery, 'locateAPIRootHeader' );\n			sinon.stub( autodiscovery, 'getRootResponseJSON' );\n		});\n\n		afterEach(function() {\n			autodiscovery.getAPIRootFromURL.restore();\n			autodiscovery.locateAPIRootHeader.restore();\n			autodiscovery.getRootResponseJSON.restore();\n		});\n\n		it( 'resolves even if no endpoint is found', function() {\n			autodiscovery.getAPIRootFromURL.returns( Promise.reject() );\n			var prom = WP.discover( 'http://we.made.it/to/mozarts/house' );\n			return expect( prom ).to.eventually.be.fulfilled;\n		});\n\n		it( 'resolves to null if no endpoint is found', function() {\n			autodiscovery.getAPIRootFromURL.returns( Promise.resolve() );\n			var prom = WP.discover( 'http://we.made.it/to/mozarts/house' )\n				.then(function( result ) {\n					expect( result ).to.equal( null );\n					return SUCCESS;\n				});\n			return expect( prom ).to.eventually.equal( SUCCESS );\n		});\n\n		it( 'logs a console error if no endpoint is found', function() {\n			autodiscovery.getAPIRootFromURL.returns( Promise.reject() );\n			var prom = WP.discover( 'http://we.made.it/to/mozarts/house' )\n				.then(function() {\n					expect( console.error ).to.have.been.calledWith( 'Autodiscovery failed' );\n					return SUCCESS;\n				});\n			return expect( prom ).to.eventually.equal( SUCCESS );\n		});\n\n		it( 'does not display any warnings if no endpoint is found', function() {\n			autodiscovery.getAPIRootFromURL.returns( Promise.reject() );\n			var prom = WP.discover( 'http://we.made.it/to/mozarts/house' )\n				.then(function() {\n					expect( console.warn ).not.to.have.been.called;\n					return SUCCESS;\n				});\n			return expect( prom ).to.eventually.equal( SUCCESS );\n		});\n\n		it( 'resolves to a WP instance if an endpoint is found but route autodiscovery fails', function() {\n			autodiscovery.getAPIRootFromURL.returns( Promise.resolve() );\n			autodiscovery.locateAPIRootHeader.returns( 'http://we.made.it/to/mozarts/house' );\n			autodiscovery.getRootResponseJSON.throws();\n			var prom = WP.discover()\n				.then(function( result ) {\n					expect( result ).to.be.an.instanceOf( WP );\n					return SUCCESS;\n				});\n			return expect( prom ).to.eventually.equal( SUCCESS );\n		});\n\n		it( 'binds returned instance to the provided endpoint even if route autodiscovery fails', function() {\n			autodiscovery.getAPIRootFromURL.returns( Promise.resolve() );\n			autodiscovery.locateAPIRootHeader.returns( 'http://we.made.it/to/mozarts/house' );\n			autodiscovery.getRootResponseJSON.throws();\n			var prom = WP.discover()\n				.then(function( result ) {\n					expect( result.root( '' )._renderURI() ).to.equal( 'http://we.made.it/to/mozarts/house/' );\n					return SUCCESS;\n				});\n			return expect( prom ).to.eventually.equal( SUCCESS );\n		});\n\n		it( 'logs a console error if an endpoint is found but route autodiscovery fails', function() {\n			autodiscovery.getAPIRootFromURL.returns( Promise.resolve() );\n			autodiscovery.locateAPIRootHeader.returns( 'http://we.made.it/to/mozarts/house' );\n			autodiscovery.getRootResponseJSON.throws();\n			var prom = WP.discover()\n				.then(function() {\n					expect( console.error ).to.have.been.calledWith( 'Autodiscovery failed' );\n					return SUCCESS;\n				});\n			return expect( prom ).to.eventually.equal( SUCCESS );\n		});\n\n		it( 'displays a warning if an endpoint is detected but route autodiscovery fails', function() {\n			autodiscovery.getAPIRootFromURL.returns( Promise.resolve() );\n			autodiscovery.locateAPIRootHeader.returns( 'http://we.made.it/to/mozarts/house' );\n			autodiscovery.getRootResponseJSON.throws();\n			var prom = WP.discover()\n				.then(function() {\n					expect( console.warn ).to.have.been.calledWith( 'Endpoint detected, proceeding despite error...' );\n					expect( console.warn ).to.have.been.calledWith( 'Binding to http://we.made.it/to/mozarts/house and assuming default routes' );\n					return SUCCESS;\n				});\n			return expect( prom ).to.eventually.equal( SUCCESS );\n		});\n\n	});\n\n});\n",
+			"file": "tests/integration/autodiscovery.js",
+			"file_size": 6809,
+			"file_write_time": 131112774790000000,
+			"settings":
+			{
+				"buffer_size": 6809,
+				"line_ending": "Unix"
+...</pre></li>
+    </ul>
 
-		// A "level" is a level-keyed object representing the valid options for
-		// one level of the resource URL
-		_levels: {},
 
-		// Objects that hold methods and properties which will be copied to
-		// instances of this endpoint's handler
-		_setters: {},
 
-		// Arguments (query parameters) that may be set in GET requests to endpoints
-		// nested within this resource route tree, used to determine the mixins to
-		// add to the request handler
-		_getArgs: routeDefinition._getArgs
-	};
-
-	// Walk the tree
-	Object.keys( routeDefinition ).forEach(function( routeDefProp ) {
-		if ( routeDefProp !== '_getArgs' ) {
-			extractSetterFromNode( handler, routeDefinition[ routeDefProp ] );
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype.auth" id="apidoc.element.wordpress-rest-api.wp_request.prototype.auth">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>auth
+        <span class="apidocSignatureSpan">( usrOrObj, password )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">auth = function ( usrOrObj, password ) {
+	if ( typeof usrOrObj === 'object' ) {
+		if ( typeof usrOrObj.username === 'string' ) {
+			this._options.username = usrOrObj.username;
 		}
-	});
 
-	return handler;
+		if ( typeof usrOrObj.password === 'string' ) {
+			this._options.password = usrOrObj.password;
+		}
+	} else {
+		if ( typeof usrOrObj === 'string' ) {
+			this._options.username = usrOrObj;
+		}
+
+		if ( typeof password === 'string' ) {
+			this._options.password = password;
+		}
+	}
+
+	// Set the "auth" options flag that will force authentication on this request
+	this._options.auth = true;
+
+	return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Now any requests generated from this WP instance will use that username and password for basic authentication if the targeted endpoint
+ requires it.
+
+As an example, `wp.users().me()` will automatically enable authentication to permit access to the `/users/me` endpoint. (If a username
+ and password had not been provided, a 401 error would have been returned.)
+
+### Manually forcing authentication
+
+Because authentication may not always be set when needed, an `.<span class="apidocCodeKeywordSpan">auth</span>()` method is provided
+ which can enable authentication for any request chain:
+```javascript
+// This will authenticate the GET to /posts/id/817
+wp.posts().id( 817 ).auth().get(...
+```
+This `.auth` method can also be used to manually specify a username and a password as part of a request chain:
+```javascript
+// Use username "mcurie" and password "nobel" for this request
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype.context" id="apidoc.element.wordpress-rest-api.wp_request.prototype.context">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>context
+        <span class="apidocSignatureSpan">( context )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">context = function ( context ) {
+	if ( context === 'edit' ) {
+		// Force basic authentication for edit context
+		this.auth();
+	}
+	return this.param( 'context', context );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		// Force basic authentication for edit context
+		this.auth();
+	}
+	return this.param( 'context', context );
+};
+
+/**
+ * Convenience wrapper for `.<span class="apidocCodeKeywordSpan">context</span>( 'edit' )`
+ *
+ * @method edit
+ * @chainable
+ * @return {WPRequest} The WPRequest instance (for chaining)
+ */
+WPRequest.prototype.edit = function() {
+	return this.context( 'edit' );
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype.create" id="apidoc.element.wordpress-rest-api.wp_request.prototype.create">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>create
+        <span class="apidocSignatureSpan">( data, callback )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function ( data, callback ) {
+	return this._httpPost( data, callback );
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 // my-endpoint-response.json file, with no need to wait for a Promise.
@@ -1142,160 +2458,499 @@ To create posts, use the `.create()` method on a query to POST (the HTTP verb fo
     </ul>
 
 
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.wordpress-rest-api.route_tree" id="apidoc.module.wordpress-rest-api.route_tree">module wordpress-rest-api.route_tree</a></h1>
-
 
     <h2>
-        <a href="#apidoc.element.wordpress-rest-api.route_tree.build" id="apidoc.element.wordpress-rest-api.route_tree.build">
-        function <span class="apidocSignatureSpan">wordpress-rest-api.route_tree.</span>build
-        <span class="apidocSignatureSpan">( routes )</span>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype.delete" id="apidoc.element.wordpress-rest-api.wp_request.prototype.delete">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>delete
+        <span class="apidocSignatureSpan">( data, callback )</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function buildRouteTree( routes ) {
-	return Object.keys( routes ).reduce( reduceRouteTree.bind( null, routes ), {} );
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.wordpress-rest-api.site" id="apidoc.module.wordpress-rest-api.site">module wordpress-rest-api.site</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.wordpress-rest-api.site.site" id="apidoc.element.wordpress-rest-api.site.site">
-        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>site
-        <span class="apidocSignatureSpan">( endpoint, routes )</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">site = function ( endpoint, routes ) {
-	return new WP({
-		endpoint: endpoint,
-		routes: routes
-	});
+    <li>description and source-code<pre class="apidocCodePre">delete = function ( data, callback ) {
+	return this._httpDelete( data, callback );
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-/**
-* Convenience method for making a new WP instance
-*
-* @example
-* These are equivalent:
-*
-*     var wp = new WP({ endpoint: 'http://my.blog.url/wp-json' });
-*     var wp = WP.<span class="apidocCodeKeywordSpan">site</span>( 'http://my.blog.url/wp-json' );
-*
-* `WP.site` can take an optional API root response JSON object to use when
-* bootstrapping the client's endpoint handler methods: if no second parameter
-* is provided, the client instance is assumed to be using the default API
-* with no additional plugins and is initialized with handlers for only those
-* default API routes.
-*
+// my-endpoint-response.json file, with no need to wait for a Promise.
+
+site.namespace( 'myplugin/v1' ).authors()...
+```
+
+To create a slimmed JSON file dedicated to this particular purpose, see the Node script [lib/data/generate-endpoint-request.js](
+lib/data/generate-endpoint-request.js), which will let you download and save an endpoint response to your local project.
+
+In addition to retrieving the specified resource with `.get()`, you can also `.create()`, `.update()` and `.<span class="apidocCodeKeywordSpan
+">delete</span>()` resources:
+
+### Creating Posts
+
+To create posts, use the `.create()` method on a query to POST (the HTTP verb for "create") a data object to the server
+:
+
+```js
+// You must authenticate to be able to POST (create) a post
 ...</pre></li>
     </ul>
 
 
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.wordpress-rest-api.toString" id="apidoc.module.wordpress-rest-api.toString">module wordpress-rest-api.toString</a></h1>
-
 
     <h2>
-        <a href="#apidoc.element.wordpress-rest-api.toString.toString" id="apidoc.element.wordpress-rest-api.toString.toString">
-        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>toString
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype.edit" id="apidoc.element.wordpress-rest-api.wp_request.prototype.edit">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>edit
         <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">edit = function () {
+	return this.context( 'edit' );
+}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.wordpress-rest-api.wp_register_route" id="apidoc.module.wordpress-rest-api.wp_register_route">module wordpress-rest-api.wp_register_route</a></h1>
-
 
     <h2>
-        <a href="#apidoc.element.wordpress-rest-api.wp_register_route.wp_register_route" id="apidoc.element.wordpress-rest-api.wp_register_route.wp_register_route">
-        function <span class="apidocSignatureSpan">wordpress-rest-api.</span>wp_register_route
-        <span class="apidocSignatureSpan">( namespace, restBase, options )</span>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype.embed" id="apidoc.element.wordpress-rest-api.wp_request.prototype.embed">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>embed
+        <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function registerRoute( namespace, restBase, options ) {
-	// Support all methods until requested to do otherwise
-	var supportedMethods = [ 'head', 'get', 'patch', 'put', 'post', 'delete' ];
-
-	if ( options &amp;&amp; Array.isArray( options.methods ) ) {
-		// Permit supported methods to be specified as an array
-		supportedMethods = options.methods.map(function( method ) {
-			return method.trim().toLowerCase();
-		});
-	} else if ( options &amp;&amp; typeof options.methods === 'string' ) {
-		// Permit a supported method to be specified as a string
-		supportedMethods = [ options.methods.trim().toLowerCase() ];
-	}
-
-	// Ensure that if GET is supported, then HEAD is as well, and vice-versa
-	if ( supportedMethods.indexOf( 'get' ) !== -1 &amp;&amp; supportedMethods.indexOf( 'head' ) === -1 ) {
-		supportedMethods.push( 'head' );
-	} else if ( supportedMethods.indexOf( 'head' ) !== -1 &amp;&amp; supportedMethods.indexOf( 'get' ) === -1 ) {
-		supportedMethods.push( 'get' );
-	}
-
-	var fullRoute = namespace
-		// Route should always have preceding slash
-		.replace( /^[\s/]*/, '/' )
-		// Route should always be joined to namespace with a single slash
-		.replace( /[\s/]*$/, '/' ) + restBase.replace( /^[\s/]*/, '' );
-
-	var routeObj = {};
-	routeObj[ fullRoute ] = {
-		namespace: namespace,
-		methods: supportedMethods
-	};
-
-	// Go through the same steps used to bootstrap the client to parse the
-	// provided route out into a handler request method
-	var routeTree = buildRouteTree( routeObj );
-	// Parse the mock route object into endpoint factories
-	var endpointFactories = generateEndpointFactories( routeTree )[ namespace ];
-	var EndpointRequest = endpointFactories[ Object.keys( endpointFactories )[ 0 ] ].Ctor;
-
-	if ( options &amp;&amp; typeof options.mixins === 'object' ) {
-
-		// Set any specified mixin functions on the response
-		Object.keys( options.mixins ).forEach(function( key ) {
-			var mixin = options.mixins[ key ];
-
-			// Will not overwrite existing methods
-			if ( typeof mixin === 'function' &amp;&amp; ! EndpointRequest.prototype[ key ] ) {
-				EndpointRequest.prototype[ key ] = options.mixins[ key ];
-			}
-		});
-	}
-
-	function endpointFactory( options ) {
-		<span class="apidocCodeCommentSpan">/* jshint validthis:true */
-</span>		options = options || {};
-		options = extend( options, this &amp;&amp; this._options );
-		return new EndpointRequest( options );
-	}
-	endpointFactory.Ctor = EndpointRequest;
-
-	return endpointFactory;
+    <li>description and source-code<pre class="apidocCodePre">embed = function () {
+	return this.param( '_embed', true );
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+**Note: This section applies only to the WP-API v2 betas and above**; the initial 1.0 release of the API embedded data by default
+.
+
+Data types in WordPress are interrelated: A post has an author, some number of tags, some number of categories, *etc*. By default
+, the API responses will provide pointers to these related objects, but will not embed the full resources: so, for example, the `&amp;#
+x22;author"` property would come back as just the author's ID, *e.g.* `"author": 4`.
+
+This functionality provides API consumers the flexibility to determine when and how they retrieve the related data. However, there
+ are also times where an API consumer will want to get the most data in the fewest number of responses. Certain resources (author
+, comments, tags, and categories, to name a few) support *embedding*, meaning that they can be included in the response if the `
+_embed` query parameter is set.
+
+To request that the API respond with embedded data, simply call `.<span class="apidocCodeKeywordSpan">embed</span>()` as part of
+ the request chain:
+
+`wp.posts().id( 2501 ).embed()`...
+
+This will include an `._embedded` object in the response JSON, which contains all of those embeddable objects:
+```js
+{
+"_embedded": {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype.get" id="apidoc.element.wordpress-rest-api.wp_request.prototype.get">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>get
+        <span class="apidocSignatureSpan">( callback )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function ( callback ) {
+	return this._httpGet( callback );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var wp = new WP({ endpoint: 'http://src.wordpress-develop.dev/wp-json' });
+```
+Once an instance is constructed, you can chain off of it to construct a specific request. (Think of it as a query-builder for WordPress
+!)
+
+We support requesting posts using either a callback-style or promise-style syntax:
+```javascript
+// Callbacks
+wp.posts().<span class="apidocCodeKeywordSpan">get</span>(function( err, data ) {
+    if ( err ) {
+        // handle err
+    }
+    // do something with the returned posts
+});
+
+// Promises
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype.headers" id="apidoc.element.wordpress-rest-api.wp_request.prototype.headers">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>headers
+        <span class="apidocSignatureSpan">( callback )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">headers = function ( callback ) {
+	return this._httpHead( callback );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* `wp.tags()...`: Get or create tags with the `/tags` endpoint
+* `wp.categories()...`: Get or create categories with the `/categories` endpoint
+* `wp.statuses()...`: Get the available statuses within the `/statuses` endpoint
+* `wp.statuses()...`: Get resources within the `/statuses` endpoints
+* `wp.users()...`: Get resources within the `/users` endpoints
+* `wp.media()...`: Get Media collections and objects from the `/media` endpoints
+
+All of these methods return a customizable request object. The request object can be further refined with chaining methods, and/
+or sent to the server via `.get()`, `.create()`, `.update()`, `.delete()`, `.<span class="apidocCodeKeywordSpan">headers</span>()`,
+or `.then()`. (Not all endpoints support all methods; for example, you cannot POST or PUT records on `/types`, as these are defined
+ in WordPress plugin or theme code.)
+
+Additional querying methods provided, by endpoint:
+
+* **posts**
+- `wp.posts()`: get a collection of posts (default query)
+- `wp.posts().id( n )`: get the post with ID *n*
+- `wp.posts().id( n ).revisions()`: get a collection of revisions for the post with ID *n*
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype.namespace" id="apidoc.element.wordpress-rest-api.wp_request.prototype.namespace">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>namespace
+        <span class="apidocSignatureSpan">( namespace )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">namespace = function ( namespace ) {
+	this._namespace = namespace;
+	return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```js
+apiPromise.then(function( site ) {
+// If default routes were detected, they are now available
+site.posts().then(function( posts ) {
+    console.log( posts );
+}); // etc
+
+// If custom routes were detected, they can be accessed via .<span class="apidocCodeKeywordSpan">namespace</span>()
+site.namespace( 'myplugin/v1' ).authors()
+    .then(function( authors ) { /* ... */ });
+
+// Namespaces can be saved out to variables:
+var myplugin = site.namespace( 'myplugin/v1' );
+myplugin.authors()
+    .id( 7 )
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype.param" id="apidoc.element.wordpress-rest-api.wp_request.prototype.param">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>param
+        <span class="apidocSignatureSpan">( props, value, merge )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">param = function ( props, value, merge ) {
+	merge = merge || false;
+
+	if ( ! props || _.isString( props ) &amp;&amp; typeof value === 'undefined' ) {
+		// We have no property to set, or no value to set for that property
+		return this;
+	}
+
+	// We can use the same iterator function below to handle explicit key-value
+	// pairs if we convert them into to an object we can iterate over:
+	if ( _.isString( props ) ) {
+		props = _.zipObject([[ props, value ]]);
+	}
+
+	// Iterate through the properties
+	Object.keys( props ).forEach(function( key ) {
+		var value = props[ key ];
+		var currentVal = this._params[ key ];
+
+		// Simple case: setting for the first time, or not merging
+		if ( ! currentVal || ! merge ) {
+
+			// Arrays should be de-duped and sorted
+			if ( _.isArray( value ) ) {
+				value = _.unique( value ).sort( alphaNumericSort );
+			}
+
+			// Set the value
+			this._params[ key ] = value;
+
+			// Continue
+			return;
+		}
+
+		// value and currentVal must both be arrays in order to merge
+		if ( ! _.isArray( currentVal ) ) {
+			currentVal = [ currentVal ];
+		}
+
+		if ( ! _.isArray( value ) ) {
+			value = [ value ];
+		}
+
+		// Concat the new values onto the old (and sort)
+		this._params[ key ] = _.union( currentVal, value ).sort( alphaNumericSort );
+	}.bind( this ));
+
+	return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+To permit custom parameter support methods on custom endpoints, a configuration object may be passed to the `registerRoute` method
+ with a `mixins` property defining any functions to add:
+
+```js
+site.handler = site.registerRoute( 'myplugin/v1', 'collection/(?P&lt;id&gt;)', {
+    mixins: {
+        myParam: function( val ) {
+            return this.<span class="apidocCodeKeywordSpan">param</span>( 'my_param', val );
+        }
+    }
+});
+```
+This permits a developer to extend an endpoint with arbitrary parameters in the same manner as is done for the automatically-generated
+ built-in route handlers.
+
+Auto-discovery of all available routes will be supported in the near future, as will re-utilizing existing mixins (like `.search
+()`) on custom routes.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype.post" id="apidoc.element.wordpress-rest-api.wp_request.prototype.post">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>post
+        <span class="apidocSignatureSpan">( data, callback )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">post = function ( data, callback ) {
+	return this._httpPost( data, callback );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+},
+{
+ "id": 123550788,
+ "url": "https://github.com/kadamwhite/wordpress-rest-api/issues/116",
+ "title": "How can I upload attachments (e.g. images) using the media WP-API endpoint?",
+ "created_by": "vtripolitakis",
+ "created_at": "12/22/2015",
+ "body": "Here's my code using request:\r\n\r\n```javascript\r\nvar request = require('request');\
+r\n\tvar fs = require('fs');\r\n\r\n\tvar formData = {\r\n  \t\tfile: fs.createReadStream('path_and_filename')\r\n\t};\r\n\r\n\trequest.<span class="apidocCodeKeywordSpan">post</span>({url:media_endpoint_url, formData: formData}, \r\n\t\tfunction optionalCallback(err, httpResponse, body) {\t\r\n\t\t  if (err) {\r\n\t\t    return console.error('upload failed:', err);\r\n\t\t  }\r\n\t\t  console.log('Upload successful!  Server responded with:', body);\r\n\t\t})\r\n\t.auth('username','password',true);\r\n```",
+ "state": "open",
+ "comments": [],
+ "comments_url": "https://api.github.com/repos/kadamwhite/wordpress-rest-api/issues/116/comments",
+ "milestone": "V2 Compatibility",
+ "quicklink": "kadamwhite/wordpress-rest-api#116"
+},
+{
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype.put" id="apidoc.element.wordpress-rest-api.wp_request.prototype.put">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>put
+        <span class="apidocSignatureSpan">( data, callback )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function ( data, callback ) {
+	return this._httpPut( data, callback );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @return {Promise} A promise to the results of the HTTP request
+*/
+WPRequest.prototype._httpPut = function( data, callback ) {
+	this._checkMethodSupport( 'put' );
+	var url = this._renderURI();
+	data = data || {};
+
+	var request = this._auth( agent.<span class="apidocCodeKeywordSpan">put</span>( url ), true ).send( data );
+
+	return invokeAndPromisify( request, callback, returnBody.bind( this ) );
+};
+
+/**
+* @method _httpDelete
+* @async
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype.setPathPart" id="apidoc.element.wordpress-rest-api.wp_request.prototype.setPathPart">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>setPathPart
+        <span class="apidocSignatureSpan">( level, val )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setPathPart = function ( level, val ) {
+	if ( this._path[ level ] ) {
+		throw new Error( 'Cannot overwrite value ' + this._path[ level ] );
+	}
+	this._path[ level ] = val;
+
+	return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		 * @type {object}
+		 * @private
+		 */
+		this._levels = handlerSpec._levels;
+
+		// Configure handler for this endpoint's root URL path &amp; set namespace
+		this
+			.<span class="apidocCodeKeywordSpan">setPathPart</span>( 0, resource )
+			.namespace( namespace );
+	}
+
+	inherit( EndpointRequest, WPRequest );
+
+	// Mix in all available shortcut methods for GET request query parameters that
+	// are valid within this endpoint tree
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype.then" id="apidoc.element.wordpress-rest-api.wp_request.prototype.then">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>then
+        <span class="apidocSignatureSpan">( successCallback, failureCallback )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">then = function ( successCallback, failureCallback ) {
+	return this._httpGet().then( successCallback, failureCallback );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    if ( err ) {
+        // handle err
+    }
+    // do something with the returned posts
+});
+
+// Promises
+wp.posts().<span class="apidocCodeKeywordSpan">then</span>(function( data ) {
+    // do something with the returned posts
+}).catch(function( err ) {
+    // handle error
+});
+```
+The `wp` object will have endpoint handler methods for every endpoint that ships with the default WordPress REST API plugin.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype.update" id="apidoc.element.wordpress-rest-api.wp_request.prototype.update">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>update
+        <span class="apidocSignatureSpan">( data, callback )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">update = function ( data, callback ) {
+	return this._httpPut( data, callback );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// my-endpoint-response.json file, with no need to wait for a Promise.
+
+site.namespace( 'myplugin/v1' ).authors()...
+```
+
+To create a slimmed JSON file dedicated to this particular purpose, see the Node script [lib/data/generate-endpoint-request.js](
+lib/data/generate-endpoint-request.js), which will let you download and save an endpoint response to your local project.
+
+In addition to retrieving the specified resource with `.get()`, you can also `.create()`, `.<span class="apidocCodeKeywordSpan">
+update</span>()` and `.delete()` resources:
+
+### Creating Posts
+
+To create posts, use the `.create()` method on a query to POST (the HTTP verb for "create") a data object to the server
+:
+
+```js
+// You must authenticate to be able to POST (create) a post
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.wordpress-rest-api.wp_request.prototype.validatePath" id="apidoc.element.wordpress-rest-api.wp_request.prototype.validatePath">
+        function <span class="apidocSignatureSpan">wordpress-rest-api.wp_request.prototype.</span>validatePath
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validatePath = function () {
+	// Iterate through all _specified_ levels of this endpoint
+	var specifiedLevels = Object.keys( this._path )
+		.map(function( level ) {
+			return parseInt( level, 10 );
+		})
+		.filter(function( pathPartKey ) {
+			return ! isNaN( pathPartKey );
+		});
+
+	var maxLevel = Math.max.apply( null, specifiedLevels );
+
+	// Ensure that all necessary levels are specified
+	var path = [];
+	var valid = true;
+
+	for ( var level = 0; level &lt;= maxLevel; level++ ) {
+
+		if ( ! this._levels || ! this._levels[ level ] ) {
+			continue;
+		}
+
+		if ( this._path[ level ] ) {
+			// Validate the provided path level against all available path validators
+			validatePathLevel( this._levels[ level ], this._path[ level ] );
+
+			// Add the path value to the array
+			path.push( this._path[ level ] );
+		} else {
+			path.push( ' ??? ' );
+			valid = false;
+		}
+	}
+
+	if ( ! valid ) {
+		throw new Error( 'Incomplete URL! Missing component: ' + path.join( '/' ) );
+	}
+
+	return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *
+ * @method _renderPath
+ * @return {String} The rendered path
+ */
+WPRequest.prototype._renderPath = function() {
+	// Call validatePath: if the provided path components are not well-formed,
+	// an error will be thrown
+	this.<span class="apidocCodeKeywordSpan">validatePath</span>();
+
+	var pathParts = this._path;
+	var orderedPathParts = Object.keys( pathParts )
+		.sort(function( a, b ) {
+			var intA = parseInt( a, 10 );
+			var intB = parseInt( b, 10 );
+			return intA - intB;
+...</pre></li>
     </ul>
 
 
